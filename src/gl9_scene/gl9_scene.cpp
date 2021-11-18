@@ -11,14 +11,13 @@
 #include <list>
 
 #include <ppgso/ppgso.h>
-
+#include "chest.h"
 #include "camera.h"
 #include "scene.h"
-#include "generator.h"
 #include "player.h"
-#include "space.h"
 
-const unsigned int SIZE = 512;
+const unsigned int SIZEX = 1360;
+const unsigned int SIZEY = 720;
 
 /*!
  * Custom windows for our simple game
@@ -36,21 +35,19 @@ private:
     scene.objects.clear();
 
     // Create a camera
-    auto camera = std::make_unique<Camera>(60.0f, 1.0f, 0.1f, 100.0f);
+    auto camera = std::make_unique<Camera>(60.0f, (float)SIZEX/(float)SIZEY, 0.1f, 100.0f);
     camera->position.z = -15.0f;
     scene.camera = move(camera);
 
-    // Add space background
-    scene.objects.push_back(std::make_unique<Space>());
+    // Add chest
+    auto chest = std::make_unique<Chest>();
 
-    // Add generator to scene
-    auto generator = std::make_unique<Generator>();
-    generator->position.y = 10.0f;
-    scene.objects.push_back(move(generator));
+    scene.objects.push_back(move(chest));
 
     // Add player to the scene
     auto player = std::make_unique<Player>();
     player->position.y = -6;
+    player->rotation.x = 3.14f*1.5f;
     scene.objects.push_back(move(player));
   }
 
@@ -58,7 +55,7 @@ public:
   /*!
    * Construct custom game window
    */
-  SceneWindow() : Window{"gl9_scene", SIZE, SIZE} {
+  SceneWindow() : Window{"gl9_scene", SIZEX, SIZEY} {
     //hideCursor();
     glfwSetInputMode(window, GLFW_STICKY_KEYS, 1);
 
