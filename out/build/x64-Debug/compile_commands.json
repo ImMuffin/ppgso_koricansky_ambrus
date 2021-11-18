@@ -1,0 +1,132 @@
+[
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\shaders.dir\\shaders\\color_vert_glsl.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\out\\build\\x64-Debug\\shaders\\color_vert_glsl.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug/shaders/color_vert_glsl.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\shaders.dir\\shaders\\color_frag_glsl.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\out\\build\\x64-Debug\\shaders\\color_frag_glsl.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug/shaders/color_frag_glsl.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\shaders.dir\\shaders\\convolution_vert_glsl.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\out\\build\\x64-Debug\\shaders\\convolution_vert_glsl.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug/shaders/convolution_vert_glsl.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\shaders.dir\\shaders\\convolution_frag_glsl.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\out\\build\\x64-Debug\\shaders\\convolution_frag_glsl.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug/shaders/convolution_frag_glsl.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\shaders.dir\\shaders\\diffuse_vert_glsl.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\out\\build\\x64-Debug\\shaders\\diffuse_vert_glsl.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug/shaders/diffuse_vert_glsl.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\shaders.dir\\shaders\\diffuse_frag_glsl.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\out\\build\\x64-Debug\\shaders\\diffuse_frag_glsl.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug/shaders/diffuse_frag_glsl.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\shaders.dir\\shaders\\texture_vert_glsl.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\out\\build\\x64-Debug\\shaders\\texture_vert_glsl.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug/shaders/texture_vert_glsl.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\shaders.dir\\shaders\\texture_frag_glsl.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\out\\build\\x64-Debug\\shaders\\texture_frag_glsl.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug/shaders/texture_frag_glsl.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\ppgso.dir\\ppgso\\mesh.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\ppgso\\mesh.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/ppgso/mesh.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\ppgso.dir\\ppgso\\tiny_obj_loader.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\ppgso\\tiny_obj_loader.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/ppgso/tiny_obj_loader.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\ppgso.dir\\ppgso\\shader.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\ppgso\\shader.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/ppgso/shader.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\ppgso.dir\\ppgso\\image.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\ppgso\\image.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/ppgso/image.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\ppgso.dir\\ppgso\\image_bmp.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\ppgso\\image_bmp.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/ppgso/image_bmp.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\ppgso.dir\\ppgso\\image_raw.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\ppgso\\image_raw.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/ppgso/image_raw.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\ppgso.dir\\ppgso\\texture.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\ppgso\\texture.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/ppgso/texture.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\ppgso.dir\\ppgso\\window.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\ppgso\\window.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/ppgso/window.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\gl9_scene.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\src\\gl9_scene\\gl9_scene.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/src/gl9_scene/gl9_scene.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\object.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\src\\gl9_scene\\object.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/src/gl9_scene/object.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\scene.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\src\\gl9_scene\\scene.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/src/gl9_scene/scene.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\camera.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\src\\gl9_scene\\camera.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/src/gl9_scene/camera.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\asteroid.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\src\\gl9_scene\\asteroid.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/src/gl9_scene/asteroid.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\generator.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\src\\gl9_scene\\generator.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/src/gl9_scene/generator.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\player.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\src\\gl9_scene\\player.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/src/gl9_scene/player.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\projectile.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\src\\gl9_scene\\projectile.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/src/gl9_scene/projectile.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\explosion.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\src\\gl9_scene\\explosion.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/src/gl9_scene/explosion.cpp"
+},
+{
+  "directory": "C:/Users/ondro/source/repos/ppgso_projekt/out/build/x64-Debug",
+  "command": "C:\\PROGRA~2\\MICROS~2\\2019\\COMMUN~1\\VC\\Tools\\MSVC\\1429~1.301\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP -DGLEW_STATIC -DGLM_FORCE_RADIANS -I..\\..\\..\\ppgso -I..\\..\\..\\dependencies\\include -I..\\..\\..\\ -I. /DWIN32 /D_WINDOWS /W3 /GR /EHsc;-openmp /MDd /Zi /Ob0 /Od /RTC1 -std:c++14 /FoCMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\space.cpp.obj /FdTARGET_COMPILE_PDB /FS -c C:\\Users\\ondro\\source\\repos\\ppgso_projekt\\src\\gl9_scene\\space.cpp",
+  "file": "C:/Users/ondro/source/repos/ppgso_projekt/src/gl9_scene/space.cpp"
+}
+]
