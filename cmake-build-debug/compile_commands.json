@@ -1,0 +1,112 @@
+[
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/shaders.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\shaders.dir\\shaders\\color_vert_glsl.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\cmake-build-debug\\shaders\\color_vert_glsl.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/color_vert_glsl.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/shaders.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\shaders.dir\\shaders\\color_frag_glsl.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\cmake-build-debug\\shaders\\color_frag_glsl.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/color_frag_glsl.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/shaders.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\shaders.dir\\shaders\\convolution_vert_glsl.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\cmake-build-debug\\shaders\\convolution_vert_glsl.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/convolution_vert_glsl.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/shaders.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\shaders.dir\\shaders\\convolution_frag_glsl.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\cmake-build-debug\\shaders\\convolution_frag_glsl.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/convolution_frag_glsl.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/shaders.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\shaders.dir\\shaders\\diffuse_vert_glsl.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\cmake-build-debug\\shaders\\diffuse_vert_glsl.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/diffuse_vert_glsl.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/shaders.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\shaders.dir\\shaders\\diffuse_frag_glsl.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\cmake-build-debug\\shaders\\diffuse_frag_glsl.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/diffuse_frag_glsl.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/shaders.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\shaders.dir\\shaders\\texture_vert_glsl.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\cmake-build-debug\\shaders\\texture_vert_glsl.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_vert_glsl.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/shaders.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\shaders.dir\\shaders\\texture_frag_glsl.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\cmake-build-debug\\shaders\\texture_frag_glsl.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_frag_glsl.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ppgso.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\ppgso.dir\\ppgso\\mesh.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\ppgso\\mesh.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/mesh.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ppgso.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\ppgso.dir\\ppgso\\tiny_obj_loader.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\ppgso\\tiny_obj_loader.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/tiny_obj_loader.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ppgso.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\ppgso.dir\\ppgso\\shader.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\ppgso\\shader.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/shader.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ppgso.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\ppgso.dir\\ppgso\\image.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\ppgso\\image.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/image.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ppgso.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\ppgso.dir\\ppgso\\image_bmp.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\ppgso\\image_bmp.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/image_bmp.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ppgso.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\ppgso.dir\\ppgso\\image_raw.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\ppgso\\image_raw.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/image_raw.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ppgso.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\ppgso.dir\\ppgso\\texture.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\ppgso\\texture.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/texture.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/ppgso.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\ppgso.dir\\ppgso\\window.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\ppgso\\window.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/window.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\gl9_scene.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\src\\gl9_scene\\gl9_scene.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/gl9_scene.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\object.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\src\\gl9_scene\\object.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/object.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\scene.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\src\\gl9_scene\\scene.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\camera.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\src\\gl9_scene\\camera.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/camera.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\player.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\src\\gl9_scene\\player.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\chest.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\src\\gl9_scene\\chest.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/chest.cpp"
+}
+]

@@ -7,6 +7,8 @@
 #include <iostream>
 #include <fstream>
 
+
+
 // shared resources
 std::unique_ptr<ppgso::Mesh> Player::mesh;
 std::unique_ptr<ppgso::Texture> Player::texture;
@@ -62,15 +64,19 @@ bool Player::update(Scene &scene, float dt) {
 
 
   if (playback){
-      if (!p.is_open()) p.open("matrix.txt");
-      if(!playbackMovement(p)) playback = false;
+      if (!p.is_open()) p.open("../data/matrix.txt");
+      if(!playbackMovement(p)) {
+          playback = false;
+          p.close();
+      }
   } else {
       generateModelMatrix();
   }
 
-
-      if (!f.is_open()) f.open("matrix.txt");
+  if (record) {
+      if (!f.is_open()) f.open("../data/matrix.txt");
       recordMovement(f);
+  }
 
 
   return true;
