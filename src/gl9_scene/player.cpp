@@ -16,23 +16,16 @@ std::unique_ptr<ppgso::Shader> Player::shader;
 
 Player::Player() {
   // Scale the default model
-  scale *= 3.0f;
+  //scale *= 1;
 
   // Initialize static resources if needed
   if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
-  if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("diver.bmp"));
-  if (!mesh) mesh = std::make_unique<ppgso::Mesh>("diver.obj");
+  if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("fish.bmp"));
+  if (!mesh) mesh = std::make_unique<ppgso::Mesh>("fish.obj");
 
 }
 
 bool Player::update(Scene &scene, float dt) {
-  // Fire delay increment
-  fireDelay += dt;
-  scale.x = 0.2f;
-  scale.y = 0.2f;
-  scale.z = 0.2f;
-
-
   // Keyboard controls
   if(scene.keyboard[GLFW_KEY_LEFT]) {
     position.x += 10 * dt;
@@ -44,12 +37,12 @@ bool Player::update(Scene &scene, float dt) {
     rotation.z = 0;
   }
 
-  if (scene.keyboard[GLFW_KEY_R])
+  if (scene.keyboard[GLFW_KEY_B])
   {
         record = true;
   }
 
-  if (scene.keyboard[GLFW_KEY_T])
+  if (scene.keyboard[GLFW_KEY_N])
   {
       if (record) {
           record = false;
@@ -57,7 +50,7 @@ bool Player::update(Scene &scene, float dt) {
       }
   }
 
-  if (scene.keyboard[GLFW_KEY_P])
+  if (scene.keyboard[GLFW_KEY_M])
   {
       playback = true;
   }
@@ -71,10 +64,6 @@ bool Player::update(Scene &scene, float dt) {
       }
   } else {
       generateModelMatrix();
-      position.x = 0;
-      position.y = 0;
-      position.z = 0;
-      printf("%f\n",position.x);
   }
 
   if (record) {

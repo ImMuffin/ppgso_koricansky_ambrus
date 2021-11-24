@@ -15,6 +15,10 @@
 #include "camera.h"
 #include "scene.h"
 #include "player.h"
+#include "aquarium.h"
+#include "castle.h"
+#include "plant.h"
+#include "sand.h"
 
 const unsigned int SIZEX = 1360;
 const unsigned int SIZEY = 720;
@@ -41,13 +45,30 @@ private:
 
     // Add chest
     auto chest = std::make_unique<Chest>();
-
     scene.objects.push_back(move(chest));
+
+    // add aquarium 
+    //auto aquarium = std::make_unique<Aquarium>();
+    //scene.objects.push_back(move(aquarium));
+
+    // add castle 
+    auto castle = std::make_unique<Castle>();
+    scene.objects.push_back(move(castle));
+
+    // add plant
+    auto plant = std::make_unique<Plant>();
+    scene.objects.push_back(move(plant));
+
+    // add sand
+    auto sand = std::make_unique<Sand>();
+    scene.objects.push_back(move(sand));
+    
 
     // Add player to the scene
     auto player = std::make_unique<Player>();
     player->position.y = -6;
-    player->rotation.x = 3.14f*1.5f;
+    player->rotation.x = 0;
+    player->rotation.y = ppgso::PI/4.0f;
     scene.objects.push_back(move(player));
   }
 
