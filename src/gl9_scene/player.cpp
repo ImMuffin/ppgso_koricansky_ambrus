@@ -20,7 +20,7 @@ Player::Player() {
   if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
   if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("diver.bmp"));
   if (!mesh) mesh = std::make_unique<ppgso::Mesh>("diver.obj");
-  if (!f) f.open("matrix.txt");
+
 }
 
 bool Player::update(Scene &scene, float dt) {
@@ -42,8 +42,37 @@ bool Player::update(Scene &scene, float dt) {
     rotation.z = 0;
   }
 
-  recordMovement(f);
-  generateModelMatrix();
+  if (scene.keyboard[GLFW_KEY_R])
+  {
+        record = true;
+  }
+
+  if (scene.keyboard[GLFW_KEY_T])
+  {
+      if (record) {
+          record = false;
+          f.close();
+      }
+  }
+
+  if (scene.keyboard[GLFW_KEY_P])
+  {
+      playback = true;
+  }
+
+
+  if (playback){
+      if (!p.is_open()) p.open("matrix.txt");
+      if(!playbackMovement(p)) playback = false;
+  } else {
+      generateModelMatrix();
+  }
+
+
+      if (!f.is_open()) f.open("matrix.txt");
+      recordMovement(f);
+
+
   return true;
 }
 

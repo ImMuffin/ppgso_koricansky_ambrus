@@ -5,6 +5,7 @@
 #include <glm/gtx/transform.hpp>
 #include <iostream>
 #include <fstream>
+#include <bits/stdc++.h>
 
 #include "object.h"
 
@@ -25,8 +26,30 @@ void Object::recordMovement(std::ofstream& f) {
             matrix += std::to_string(modelMatrix[i][a]) + " ";
         };
     };
+    f << matrix << std::endl;
+}
 
-    f<<matrix;
-    f.flush();
+bool Object::playbackMovement(std::ifstream& p) {
+
+
+    std::string text;
+    std::string fl;
+    std::getline(p, text);
+    std::stringstream stream(text);
+
+    if (p.eof()){
+        return false;
+    };
+
+    for (int i = 0; i < 4; i++)
+    {
+        for (int a = 0; a < 4; a++)
+        {
+            stream >> fl;
+            modelMatrix[i][a] = std::stof(fl);
+        };
+    };
+
+    return true;
 
 }

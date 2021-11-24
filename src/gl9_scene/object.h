@@ -41,6 +41,8 @@ public:
 
   virtual void recordMovement(std::ofstream& file);
 
+  virtual bool playbackMovement(std::ifstream& file);
+
 
   /*!
    * Event to be called when the object is clicked
@@ -55,6 +57,9 @@ public:
   glm::mat4 modelMatrix{1};
 
   std::ofstream f;
+  std::ifstream p;
+  bool record = false;
+  bool playback = false;
 
 protected:
   /*!
