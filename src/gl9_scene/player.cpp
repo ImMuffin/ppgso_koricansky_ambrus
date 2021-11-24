@@ -71,6 +71,10 @@ bool Player::update(Scene &scene, float dt) {
       }
   } else {
       generateModelMatrix();
+      position.x = 0;
+      position.y = 0;
+      position.z = 0;
+      printf("%f\n",position.x);
   }
 
   if (record) {
