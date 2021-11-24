@@ -2,6 +2,8 @@
 #include <ppgso/ppgso.h>
 
 #include "object.h"
+#include <iostream>
+#include <fstream>
 
 /*!
  * Simple object representing the player

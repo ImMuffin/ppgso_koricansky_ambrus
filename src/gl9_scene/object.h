@@ -4,6 +4,9 @@
 #include <map>
 
 #include <glm/glm.hpp>
+#include <iostream>
+#include <fstream>
+
 
 // Forward declare a scene
 class Scene;
@@ -36,6 +39,8 @@ public:
    */
   virtual void render(Scene &scene) = 0;
 
+  virtual void recordMovement(std::ofstream file);
+
 
   /*!
    * Event to be called when the object is clicked
@@ -49,10 +54,13 @@ public:
   glm::vec3 scale{1,1,1};
   glm::mat4 modelMatrix{1};
 
+  std::ofstream f;
+
 protected:
   /*!
    * Generate modelMatrix from position, rotation and scale
    */
   void generateModelMatrix();
+
 };
 

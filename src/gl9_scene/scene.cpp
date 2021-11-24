@@ -19,7 +19,8 @@ void Scene::update(float time) {
 void Scene::render() {
   // Simply render all objects
   for ( auto& obj : objects )
-    obj->render(*this);
+      obj->render(*this);
+
 }
 
 std::vector<Object*> Scene::intersect(const glm::vec3 &position, const glm::vec3 &direction) {

@@ -4,6 +4,8 @@
 
 #include <shaders/diffuse_vert_glsl.h>
 #include <shaders/diffuse_frag_glsl.h>
+#include <iostream>
+#include <fstream>
 
 // shared resources
 std::unique_ptr<ppgso::Mesh> Player::mesh;
@@ -18,6 +20,7 @@ Player::Player() {
   if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
   if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("diver.bmp"));
   if (!mesh) mesh = std::make_unique<ppgso::Mesh>("diver.obj");
+  if (!f) f.open("matrix.txt");
 }
 
 bool Player::update(Scene &scene, float dt) {
@@ -39,7 +42,7 @@ bool Player::update(Scene &scene, float dt) {
     rotation.z = 0;
   }
 
-
+  recordMovement(f);
   generateModelMatrix();
   return true;
 }

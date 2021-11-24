@@ -15,7 +15,7 @@ std::unique_ptr<ppgso::Texture> Chest::texture;
 std::unique_ptr<ppgso::Shader> Chest::shader;
 
 Chest::Chest() {
-    // Scale the default model
+    //Scale the default model
     scale *= 3.0f;
 
     // Initialize static resources if needed
