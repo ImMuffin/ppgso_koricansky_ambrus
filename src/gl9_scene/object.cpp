@@ -15,15 +15,18 @@ void Object::generateModelMatrix() {
           * glm::scale(glm::mat4(1.0f), scale);
 }
 
-void Object::recordMovement(std::ofstream file) {
+void Object::recordMovement(std::ofstream& f) {
 
     std::string matrix;
     for (int i = 0; i < 4; i++)
     {
-        for (int a = 0; i < 4; a++)
+        for (int a = 0; a < 4; a++)
         {
-            matrix += modelMatrix[i][a];
+            matrix += std::to_string(modelMatrix[i][a]) + " ";
         };
     };
-    file << matrix << std::flush;;
+
+    f<<matrix;
+    f.flush();
+
 }
