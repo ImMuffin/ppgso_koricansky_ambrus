@@ -40,11 +40,14 @@ private:
 
     // Create a camera
     auto camera = std::make_unique<Camera>(60.0f, (float)SIZEX/(float)SIZEY, 0.1f, 100.0f);
-    camera->position.z = -15.0f;
     scene.camera = move(camera);
 
     // Add chest
     auto chest = std::make_unique<Chest>();
+    chest->rotation.x = -ppgso::PI/2.0f;
+    chest->position.y = 0.5f;
+    chest->position.z = 1;
+    chest->scale *= 0.04f;
     scene.objects.push_back(move(chest));
 
     // add aquarium 
@@ -53,14 +56,21 @@ private:
 
     // add castle 
     auto castle = std::make_unique<Castle>();
+    castle->rotation.x = -ppgso::PI/2.0f;
+    castle->scale *= 0.2;
+    castle->position.x = 4.5f;
+    castle->position.z = -2;
     scene.objects.push_back(move(castle));
 
     // add plant
     auto plant = std::make_unique<Plant>();
+    plant->scale *= 10.0f;
+    plant->position.x = -4;
     scene.objects.push_back(move(plant));
 
     // add sand
     auto sand = std::make_unique<Sand>();
+    sand->rotation.z = -ppgso::PI/2.0f;
     scene.objects.push_back(move(sand));
     
 
@@ -174,7 +184,6 @@ public:
     glClearColor(.5f, .5f, .5f, 0);
     // Clear depth and color buffers
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
     // Update and render all objects
     scene.update(dt);
     scene.render();

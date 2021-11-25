@@ -15,10 +15,6 @@ std::unique_ptr<ppgso::Texture> Sand::texture;
 std::unique_ptr<ppgso::Shader> Sand::shader;
 
 Sand::Sand() {
-  // Scale the default model
-  scale *= 1;
-  position.x = 2;
-
   // Initialize static resources if needed
   if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
   if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("sand.bmp"));
@@ -27,6 +23,7 @@ Sand::Sand() {
 }
 
 bool Sand::update(Scene &scene, float dt) {
+  generateModelMatrix();
   return true;
 }
 

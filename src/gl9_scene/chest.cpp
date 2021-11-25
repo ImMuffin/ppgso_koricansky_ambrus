@@ -25,11 +25,6 @@ Chest::Chest() {
 }
 
 bool Chest::update(Scene &scene, float dt) {
-    // Fire delay increment
-    scale.x = 0.2f;
-    scale.y = 0.2f;
-    scale.z = 0.2f;
-
     generateModelMatrix();
     return true;
 }
