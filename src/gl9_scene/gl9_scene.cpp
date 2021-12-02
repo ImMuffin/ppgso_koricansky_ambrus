@@ -44,7 +44,7 @@ private:
     scene.camera = move(camera);
 
     // Add chest
-   /* auto chest = std::make_unique<Chest>();
+    /*auto chest = std::make_unique<Chest>();
     chest->rotation.x = -ppgso::PI/2.0f;
     chest->position.y = 0.5f;
     chest->position.z = 1;
@@ -83,10 +83,11 @@ private:
     scene.objects.push_back(move(player));
 
 
-    for (int i = 0; i < 5; i++){
+    for (int i = 0; i < 100; i++){
         auto water = std::make_unique<Water>();
         water->position.y = i * 2;
-        water->position.x = 5;
+        water->position.x = (float)rand()/(float)RAND_MAX;
+        water->position.z = (float)rand()/(float)RAND_MAX;
         water->scale *= 0.1f;
         scene.objects.push_back(move(water));
     }
