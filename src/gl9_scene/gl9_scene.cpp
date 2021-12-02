@@ -19,6 +19,7 @@
 #include "castle.h"
 #include "plant.h"
 #include "sand.h"
+#include "water.h"
 
 const unsigned int SIZEX = 1360;
 const unsigned int SIZEY = 720;
@@ -43,43 +44,53 @@ private:
     scene.camera = move(camera);
 
     // Add chest
-    auto chest = std::make_unique<Chest>();
+   /* auto chest = std::make_unique<Chest>();
     chest->rotation.x = -ppgso::PI/2.0f;
     chest->position.y = 0.5f;
     chest->position.z = 1;
     chest->scale *= 0.04f;
-    scene.objects.push_back(move(chest));
+    scene.objects.push_back(move(chest));*/
 
     // add aquarium 
     //auto aquarium = std::make_unique<Aquarium>();
     //scene.objects.push_back(move(aquarium));
 
     // add castle 
-    auto castle = std::make_unique<Castle>();
+    /*auto castle = std::make_unique<Castle>();
     castle->rotation.x = -ppgso::PI/2.0f;
     castle->scale *= 0.2;
     castle->position.x = 4.5f;
     castle->position.z = -2;
-    scene.objects.push_back(move(castle));
+    scene.objects.push_back(move(castle));*/
 
     // add plant
-    auto plant = std::make_unique<Plant>();
+    /*auto plant = std::make_unique<Plant>();
     plant->scale *= 10.0f;
     plant->position.x = -4;
-    scene.objects.push_back(move(plant));
+    scene.objects.push_back(move(plant));*/
 
     // add sand
-    auto sand = std::make_unique<Sand>();
+    /*auto sand = std::make_unique<Sand>();
     sand->rotation.z = -ppgso::PI/2.0f;
-    scene.objects.push_back(move(sand));
+    scene.objects.push_back(move(sand));*/
     
 
     // Add player to the scene
-    auto player = std::make_unique<Player>();
+    /*auto player = std::make_unique<Player>();
     player->position.y = -6;
     player->rotation.x = 0;
     player->rotation.y = ppgso::PI/4.0f;
-    scene.objects.push_back(move(player));
+    scene.objects.push_back(move(player));*/
+
+
+    for (int i = 0; i < 5; i++){
+        auto water = std::make_unique<Water>();
+        water->position.y = i * 2;
+        water->position.x = 5;
+        water->scale *= 0.1f;
+        scene.objects.push_back(move(water));
+    }
+
   }
 
 public:

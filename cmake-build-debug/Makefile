@@ -583,6 +583,30 @@ shaders/texture_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s
 .PHONY : shaders/texture_vert_glsl.cpp.s
 
+src/gl9_scene/aquarium.obj: src/gl9_scene/aquarium.cpp.obj
+.PHONY : src/gl9_scene/aquarium.obj
+
+# target to build an object file
+src/gl9_scene/aquarium.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.obj
+.PHONY : src/gl9_scene/aquarium.cpp.obj
+
+src/gl9_scene/aquarium.i: src/gl9_scene/aquarium.cpp.i
+.PHONY : src/gl9_scene/aquarium.i
+
+# target to preprocess a source file
+src/gl9_scene/aquarium.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.i
+.PHONY : src/gl9_scene/aquarium.cpp.i
+
+src/gl9_scene/aquarium.s: src/gl9_scene/aquarium.cpp.s
+.PHONY : src/gl9_scene/aquarium.s
+
+# target to generate assembly for a file
+src/gl9_scene/aquarium.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.s
+.PHONY : src/gl9_scene/aquarium.cpp.s
+
 src/gl9_scene/camera.obj: src/gl9_scene/camera.cpp.obj
 .PHONY : src/gl9_scene/camera.obj
 
@@ -606,6 +630,30 @@ src/gl9_scene/camera.s: src/gl9_scene/camera.cpp.s
 src/gl9_scene/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.s
 .PHONY : src/gl9_scene/camera.cpp.s
+
+src/gl9_scene/castle.obj: src/gl9_scene/castle.cpp.obj
+.PHONY : src/gl9_scene/castle.obj
+
+# target to build an object file
+src/gl9_scene/castle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.obj
+.PHONY : src/gl9_scene/castle.cpp.obj
+
+src/gl9_scene/castle.i: src/gl9_scene/castle.cpp.i
+.PHONY : src/gl9_scene/castle.i
+
+# target to preprocess a source file
+src/gl9_scene/castle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.i
+.PHONY : src/gl9_scene/castle.cpp.i
+
+src/gl9_scene/castle.s: src/gl9_scene/castle.cpp.s
+.PHONY : src/gl9_scene/castle.s
+
+# target to generate assembly for a file
+src/gl9_scene/castle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.s
+.PHONY : src/gl9_scene/castle.cpp.s
 
 src/gl9_scene/chest.obj: src/gl9_scene/chest.cpp.obj
 .PHONY : src/gl9_scene/chest.obj
@@ -679,6 +727,30 @@ src/gl9_scene/object.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.s
 .PHONY : src/gl9_scene/object.cpp.s
 
+src/gl9_scene/plant.obj: src/gl9_scene/plant.cpp.obj
+.PHONY : src/gl9_scene/plant.obj
+
+# target to build an object file
+src/gl9_scene/plant.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.obj
+.PHONY : src/gl9_scene/plant.cpp.obj
+
+src/gl9_scene/plant.i: src/gl9_scene/plant.cpp.i
+.PHONY : src/gl9_scene/plant.i
+
+# target to preprocess a source file
+src/gl9_scene/plant.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.i
+.PHONY : src/gl9_scene/plant.cpp.i
+
+src/gl9_scene/plant.s: src/gl9_scene/plant.cpp.s
+.PHONY : src/gl9_scene/plant.s
+
+# target to generate assembly for a file
+src/gl9_scene/plant.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.s
+.PHONY : src/gl9_scene/plant.cpp.s
+
 src/gl9_scene/player.obj: src/gl9_scene/player.cpp.obj
 .PHONY : src/gl9_scene/player.obj
 
@@ -703,6 +775,30 @@ src/gl9_scene/player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.s
 .PHONY : src/gl9_scene/player.cpp.s
 
+src/gl9_scene/sand.obj: src/gl9_scene/sand.cpp.obj
+.PHONY : src/gl9_scene/sand.obj
+
+# target to build an object file
+src/gl9_scene/sand.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj
+.PHONY : src/gl9_scene/sand.cpp.obj
+
+src/gl9_scene/sand.i: src/gl9_scene/sand.cpp.i
+.PHONY : src/gl9_scene/sand.i
+
+# target to preprocess a source file
+src/gl9_scene/sand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.i
+.PHONY : src/gl9_scene/sand.cpp.i
+
+src/gl9_scene/sand.s: src/gl9_scene/sand.cpp.s
+.PHONY : src/gl9_scene/sand.s
+
+# target to generate assembly for a file
+src/gl9_scene/sand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.s
+.PHONY : src/gl9_scene/sand.cpp.s
+
 src/gl9_scene/scene.obj: src/gl9_scene/scene.cpp.obj
 .PHONY : src/gl9_scene/scene.obj
 
@@ -726,6 +822,30 @@ src/gl9_scene/scene.s: src/gl9_scene/scene.cpp.s
 src/gl9_scene/scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.s
 .PHONY : src/gl9_scene/scene.cpp.s
+
+src/gl9_scene/water.obj: src/gl9_scene/water.cpp.obj
+.PHONY : src/gl9_scene/water.obj
+
+# target to build an object file
+src/gl9_scene/water.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj
+.PHONY : src/gl9_scene/water.cpp.obj
+
+src/gl9_scene/water.i: src/gl9_scene/water.cpp.i
+.PHONY : src/gl9_scene/water.i
+
+# target to preprocess a source file
+src/gl9_scene/water.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.i
+.PHONY : src/gl9_scene/water.cpp.i
+
+src/gl9_scene/water.s: src/gl9_scene/water.cpp.s
+.PHONY : src/gl9_scene/water.s
+
+# target to generate assembly for a file
+src/gl9_scene/water.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.s
+.PHONY : src/gl9_scene/water.cpp.s
 
 # Help Target
 help:
@@ -790,9 +910,15 @@ help:
 	@echo ... shaders/texture_vert_glsl.obj
 	@echo ... shaders/texture_vert_glsl.i
 	@echo ... shaders/texture_vert_glsl.s
+	@echo ... src/gl9_scene/aquarium.obj
+	@echo ... src/gl9_scene/aquarium.i
+	@echo ... src/gl9_scene/aquarium.s
 	@echo ... src/gl9_scene/camera.obj
 	@echo ... src/gl9_scene/camera.i
 	@echo ... src/gl9_scene/camera.s
+	@echo ... src/gl9_scene/castle.obj
+	@echo ... src/gl9_scene/castle.i
+	@echo ... src/gl9_scene/castle.s
 	@echo ... src/gl9_scene/chest.obj
 	@echo ... src/gl9_scene/chest.i
 	@echo ... src/gl9_scene/chest.s
@@ -802,12 +928,21 @@ help:
 	@echo ... src/gl9_scene/object.obj
 	@echo ... src/gl9_scene/object.i
 	@echo ... src/gl9_scene/object.s
+	@echo ... src/gl9_scene/plant.obj
+	@echo ... src/gl9_scene/plant.i
+	@echo ... src/gl9_scene/plant.s
 	@echo ... src/gl9_scene/player.obj
 	@echo ... src/gl9_scene/player.i
 	@echo ... src/gl9_scene/player.s
+	@echo ... src/gl9_scene/sand.obj
+	@echo ... src/gl9_scene/sand.i
+	@echo ... src/gl9_scene/sand.s
 	@echo ... src/gl9_scene/scene.obj
 	@echo ... src/gl9_scene/scene.i
 	@echo ... src/gl9_scene/scene.s
+	@echo ... src/gl9_scene/water.obj
+	@echo ... src/gl9_scene/water.i
+	@echo ... src/gl9_scene/water.s
 .PHONY : help
 
 

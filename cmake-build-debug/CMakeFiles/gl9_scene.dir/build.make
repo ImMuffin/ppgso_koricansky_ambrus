@@ -149,6 +149,76 @@ CMakeFiles/gl9_scene.dir/src/gl9_scene/chest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/chest.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\chest.cpp -o CMakeFiles\gl9_scene.dir\src\gl9_scene\chest.cpp.s
 
+CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.obj: ../src/gl9_scene/aquarium.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\aquarium.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\aquarium.cpp
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\aquarium.cpp > CMakeFiles\gl9_scene.dir\src\gl9_scene\aquarium.cpp.i
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\aquarium.cpp -o CMakeFiles\gl9_scene.dir\src\gl9_scene\aquarium.cpp.s
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.obj: ../src/gl9_scene/castle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\castle.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\castle.cpp
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\castle.cpp > CMakeFiles\gl9_scene.dir\src\gl9_scene\castle.cpp.i
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\castle.cpp -o CMakeFiles\gl9_scene.dir\src\gl9_scene\castle.cpp.s
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.obj: ../src/gl9_scene/plant.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\plant.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\plant.cpp
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\plant.cpp > CMakeFiles\gl9_scene.dir\src\gl9_scene\plant.cpp.i
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\plant.cpp -o CMakeFiles\gl9_scene.dir\src\gl9_scene\plant.cpp.s
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj: ../src/gl9_scene/sand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\sand.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\sand.cpp
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\sand.cpp > CMakeFiles\gl9_scene.dir\src\gl9_scene\sand.cpp.i
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\sand.cpp -o CMakeFiles\gl9_scene.dir\src\gl9_scene\sand.cpp.s
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj: ../src/gl9_scene/water.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\water.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\water.cpp
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\water.cpp > CMakeFiles\gl9_scene.dir\src\gl9_scene\water.cpp.i
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\water.cpp -o CMakeFiles\gl9_scene.dir\src\gl9_scene\water.cpp.s
+
 # Object files for target gl9_scene
 gl9_scene_OBJECTS = \
 "CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj" \
@@ -156,7 +226,12 @@ gl9_scene_OBJECTS = \
 "CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj" \
 "CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj" \
 "CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/chest.cpp.obj"
+"CMakeFiles/gl9_scene.dir/src/gl9_scene/chest.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj"
 
 # External object files for target gl9_scene
 gl9_scene_EXTERNAL_OBJECTS =
@@ -167,6 +242,11 @@ gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/chest.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/build.make
 gl9_scene.exe: libppgso.a
 gl9_scene.exe: libshaders.a
@@ -175,7 +255,7 @@ gl9_scene.exe: ../dependencies/lib/mingw/libglew32.a
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/linklibs.rsp
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/objects1.rsp
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable gl9_scene.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable gl9_scene.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gl9_scene.dir\link.txt --verbose=$(VERBOSE)
 	"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E copy_directory C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/data/ C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug
 

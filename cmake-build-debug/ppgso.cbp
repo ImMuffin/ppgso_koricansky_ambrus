@@ -350,10 +350,22 @@
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/window.h">
 			<Option target="ppgso"/>
 		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/aquarium.cpp">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/aquarium.h">
+			<Option target="gl9_scene"/>
+		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/camera.cpp">
 			<Option target="gl9_scene"/>
 		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/camera.h">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/castle.cpp">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/castle.h">
 			<Option target="gl9_scene"/>
 		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/chest.cpp">
@@ -371,16 +383,34 @@
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/object.h">
 			<Option target="gl9_scene"/>
 		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/plant.cpp">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/plant.h">
+			<Option target="gl9_scene"/>
+		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.cpp">
 			<Option target="gl9_scene"/>
 		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.h">
 			<Option target="gl9_scene"/>
 		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/sand.cpp">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/sand.h">
+			<Option target="gl9_scene"/>
+		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.cpp">
 			<Option target="gl9_scene"/>
 		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.h">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/water.cpp">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/water.h">
 			<Option target="gl9_scene"/>
 		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/CMakeLists.txt">

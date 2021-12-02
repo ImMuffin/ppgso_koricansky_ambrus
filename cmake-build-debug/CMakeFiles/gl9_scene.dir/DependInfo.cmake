@@ -8,12 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/aquarium.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.obj"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/camera.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj"
+  "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/castle.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.obj"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/chest.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/chest.cpp.obj"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/gl9_scene.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/object.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/object.cpp.obj"
+  "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/plant.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.obj"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj"
+  "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/sand.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj"
+  "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/water.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

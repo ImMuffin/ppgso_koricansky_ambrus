@@ -1026,29 +1026,9 @@ iostream
 fstream
 -
 
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.cpp
-player.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.cpp
 scene.h
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.h
-shaders/diffuse_vert_glsl.h
--
-shaders/diffuse_frag_glsl.h
--
-iostream
--
-fstream
--
-
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.h
-ppgso/ppgso.h
--
-object.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/object.h
-iostream
--
-fstream
--
 
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.h
 memory
@@ -1061,12 +1041,4 @@ object.h
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/object.h
 camera.h
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/camera.h
-
-shaders/diffuse_frag_glsl.h
-string
--
-
-shaders/diffuse_vert_glsl.h
-string
--
 
