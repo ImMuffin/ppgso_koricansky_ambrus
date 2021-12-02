@@ -20,12 +20,15 @@ Water::Water() {
 
     // Initialize static resources if needed
     if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
-    if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("chest.bmp"));
+    if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("aquarium.bmp"));
     if (!mesh) mesh = std::make_unique<ppgso::Mesh>("ball.obj");
 }
 
 bool Water::update(Scene &scene, float dt) {
-    collide(scene, {0,-1,0});
+    position.y -= 0.5f;
+    if (position.y < 0)
+        position.y = 0;
+    collide(scene);
     generateModelMatrix();
     return true;
 }
@@ -46,27 +49,19 @@ void Water::render(Scene &scene) {
     mesh->render();
 }
 
-void Water::collide(Scene &scene, glm::vec3 direction) {
-    std::vector<Object*> intersected = scene.intersect(position, direction);
-    if (position.y > 0)
-        position.y -= 0.1f;
-    if (position.y < 0)
-        position.y = 0;
-    /*for (auto object : intersected){
-        if (dynamic_cast<Water*>(object) != NULL)
-            direct(this, object);
-    };*/
+void Water::collide(Scene &scene) {
 
-}
+    for (auto& object : scene.objects){
+        glm::vec3 pdif = position - object->position;
+        float dis = glm::length(pdif);
+        float col = dis - scale.x - object->scale.x;
 
-void Water::direct(Object* obj1, Object* obj2) {
-    int distance = sqrt((obj1->position.x - obj2->position.x)*(obj1->position.x - obj2->position.x) + (obj1->position.y - obj2->position.y)*(obj1->position.y - obj2->position.y)+(obj1->position.z - obj2->position.z)*(obj1->position.z - obj2->position.z));
-    distance -= obj1->scale.x;
-    distance = abs(distance);
-    glm::vec3 F1 = obj1->position - obj2->position;
-    F1 *= distance;
+        if (col < 0 && dis != 0) {
+            auto ratio = -col / dis;
+            auto vec = pdif * ratio;
 
-    obj1->position += F1;
-    obj2->position -= F1;
+            position += vec;
+        }
 
+    }
 }

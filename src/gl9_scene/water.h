@@ -37,7 +37,7 @@ public:
      */
     void render(Scene &scene) override;
 
-    void collide(Scene &scene, glm::vec3 direction);
+    void collide(Scene &scene);
 
     void direct(Object* obj1, Object* obj2);
 };
