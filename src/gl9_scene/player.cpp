@@ -68,7 +68,8 @@ bool Player::update(Scene &scene, float dt) {
 
   if (record) {
       if (!f.is_open()) f.open("../data/matrix.txt");
-      recordMovement(f);
+      printf("%d\n",(int) (glfwGetTime() * 100));
+      recordMovement(f, 0.01);
   }
 
 

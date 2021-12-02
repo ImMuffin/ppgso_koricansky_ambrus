@@ -39,7 +39,7 @@ public:
    */
   virtual void render(Scene &scene) = 0;
 
-  virtual void recordMovement(std::ofstream& file);
+  virtual void recordMovement(std::ofstream& file, float dt);
 
   virtual bool playbackMovement(std::ifstream& file);
 

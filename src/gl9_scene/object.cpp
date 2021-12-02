@@ -16,7 +16,7 @@ void Object::generateModelMatrix() {
           * glm::scale(glm::mat4(1.0f), scale);
 }
 
-void Object::recordMovement(std::ofstream& f) {
+void Object::recordMovement(std::ofstream& f, float dt) {
 
     std::string matrix;
     for (int i = 0; i < 4; i++)
@@ -26,6 +26,7 @@ void Object::recordMovement(std::ofstream& f) {
             matrix += std::to_string(modelMatrix[i][a]) + " ";
         };
     };
+    matrix += std::to_string(dt);
     f << matrix << std::endl;
 }
 

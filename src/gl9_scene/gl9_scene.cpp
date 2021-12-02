@@ -76,11 +76,11 @@ private:
     
 
     // Add player to the scene
-    /*auto player = std::make_unique<Player>();
+    auto player = std::make_unique<Player>();
     player->position.y = -6;
     player->rotation.x = 0;
     player->rotation.y = ppgso::PI/4.0f;
-    scene.objects.push_back(move(player));*/
+    scene.objects.push_back(move(player));
 
 
     for (int i = 0; i < 5; i++){
