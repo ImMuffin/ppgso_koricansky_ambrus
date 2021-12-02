@@ -25,10 +25,12 @@ Water::Water() {
 }
 
 bool Water::update(Scene &scene, float dt) {
-    position.y -= 0.5f;
+    position.y -= 0.3f;
+
     if (position.y < 0)
         position.y = 0;
-    collide(scene);
+    multipleCollisions(scene);
+
     generateModelMatrix();
     return true;
 }
@@ -61,7 +63,28 @@ void Water::collide(Scene &scene) {
             auto vec = pdif * ratio;
 
             position += vec;
+
         }
 
     }
+}
+
+void Water::multipleCollisions(Scene &scene) {
+
+    glm::vec3 finalVec = {0,0,0};
+
+    for (auto& object : scene.objects){
+        glm::vec3 pdif = position - object->position;
+        float dis = glm::length(pdif);
+        float col = dis - scale.x - object->scale.x;
+
+        if (col < 0 && dis != 0) {
+            auto ratio = -col / dis;
+            auto vec = pdif * ratio;
+            finalVec += vec;
+        }
+    }
+
+    position += finalVec;
+
 }

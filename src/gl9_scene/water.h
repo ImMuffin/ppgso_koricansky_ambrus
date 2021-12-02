@@ -40,6 +40,8 @@ public:
     void collide(Scene &scene);
 
     void direct(Object* obj1, Object* obj2);
+
+    void multipleCollisions(Scene &scene);
 };
 
 
