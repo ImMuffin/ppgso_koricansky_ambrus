@@ -61,6 +61,8 @@ public:
   bool record = false;
   bool playback = false;
   int keyframeTime = 0;
+  glm::mat4 firstModel;
+  glm::mat4 secondModel;
 
 protected:
   /*!
