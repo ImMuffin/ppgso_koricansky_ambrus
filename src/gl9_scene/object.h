@@ -39,7 +39,7 @@ public:
    */
   virtual void render(Scene &scene) = 0;
 
-  virtual void recordMovement(std::ofstream& file, float dt);
+  virtual void recordMovement(std::ofstream& file);
 
   virtual bool playbackMovement(std::ifstream& file);
 
@@ -60,6 +60,7 @@ public:
   std::ifstream p;
   bool record = false;
   bool playback = false;
+  int keyframeTime = 0;
 
 protected:
   /*!

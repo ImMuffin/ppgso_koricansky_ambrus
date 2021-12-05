@@ -39,6 +39,7 @@ bool Player::update(Scene &scene, float dt) {
 
   if (scene.keyboard[GLFW_KEY_B])
   {
+        keyframeTime = 0;
         record = true;
   }
 
@@ -52,15 +53,21 @@ bool Player::update(Scene &scene, float dt) {
 
   if (scene.keyboard[GLFW_KEY_M])
   {
+      keyframeTime = 0;
       playback = true;
   }
 
 
   if (playback){
       if (!p.is_open()) p.open("../data/matrix.txt");
-      if(!playbackMovement(p)) {
+      int halfSeconds = (((int) glfwGetTime()) * 2) + (( (int) (glfwGetTime() * 10)) % 10) / 5;
+      if(halfSeconds > keyframeTime)
+      {
+        keyframeTime = halfSeconds;
+        if(!playbackMovement(p)) {
           playback = false;
           p.close();
+        }
       }
   } else {
       generateModelMatrix();
@@ -68,8 +75,12 @@ bool Player::update(Scene &scene, float dt) {
 
   if (record) {
       if (!f.is_open()) f.open("../data/matrix.txt");
-      printf("%d\n",(int) (glfwGetTime() * 100));
-      recordMovement(f, 0.01);
+      int halfSeconds = (((int) glfwGetTime()) * 2) + (( (int) (glfwGetTime() * 10)) % 10) / 5;
+      if(halfSeconds > keyframeTime)
+      {
+        keyframeTime = halfSeconds;
+        recordMovement(f);
+      }
   }
 
 
