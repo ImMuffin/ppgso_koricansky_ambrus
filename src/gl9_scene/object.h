@@ -39,7 +39,7 @@ public:
    */
   virtual void render(Scene &scene) = 0;
 
-  virtual void recordMovement(std::ofstream& file, float dt);
+  virtual void recordMovement(std::ofstream& file);
 
   virtual bool playbackMovement(std::ifstream& file);
 
@@ -60,6 +60,12 @@ public:
   std::ifstream p;
   bool record = false;
   bool playback = false;
+  int keyframeTime = 0;
+  glm::mat4 firstModel;
+  glm::mat4 secondModel;
+
+  bool cameraFocus = false;
+  glm::vec3 forward{0,0,0};
 
 protected:
   /*!

@@ -26,23 +26,42 @@ Player::Player() {
 }
 
 bool Player::update(Scene &scene, float dt) {
+  // calculate forward
+    forward.x = sin(rotation.z)*sin(rotation.x);
+    forward.y = cos(rotation.x);
+    forward.z = sin(rotation.x)*cos(rotation.z);
   // Keyboard controls
   if(scene.keyboard[GLFW_KEY_LEFT]) {
-    position.x += 10 * dt;
-    rotation.z = -ppgso::PI/4.0f;
+    rotation.z += ppgso::PI/2.0f * dt;
   } else if(scene.keyboard[GLFW_KEY_RIGHT]) {
-    position.x -= 10 * dt;
-    rotation.z = ppgso::PI/4.0f;
-  } else {
-    rotation.z = 0;
+    rotation.z -= ppgso::PI/2.0f * dt;
   }
-
-  if (scene.keyboard[GLFW_KEY_B])
+  
+  if(scene.keyboard[GLFW_KEY_UP])
   {
-        record = true;
+    position -= forward * dt;
+  } else if(scene.keyboard[GLFW_KEY_DOWN])
+  {
+    position += forward * dt;
   }
 
-  if (scene.keyboard[GLFW_KEY_N])
+  if(scene.keyboard[GLFW_KEY_PAGE_UP])
+  {
+    rotation.x += ppgso::PI/2.0f * dt;
+  }
+  else if (scene.keyboard[GLFW_KEY_PAGE_DOWN])
+  {
+    rotation.x -= ppgso::PI/2.0f * dt;
+  }
+
+  if (scene.keyboard[GLFW_KEY_B] && record == false)
+  {
+      if (!f.is_open()) f.open("../data/matrix.txt");
+      keyframeTime = 0;
+      record = true;
+  }
+
+  if (scene.keyboard[GLFW_KEY_N] && record == true)
   {
       if (record) {
           record = false;
@@ -50,26 +69,47 @@ bool Player::update(Scene &scene, float dt) {
       }
   }
 
-  if (scene.keyboard[GLFW_KEY_M])
+  if (scene.keyboard[GLFW_KEY_M] && playback == false)
   {
+      if (!p.is_open()) p.open("../data/matrix.txt");
+      keyframeTime = (((int) glfwGetTime()) * 2) + (( (int) (glfwGetTime() * 10)) % 10) / 5;
+      playbackMovement(p);
+      firstModel = modelMatrix;
+      playbackMovement(p);
+      secondModel = modelMatrix;
+      modelMatrix = firstModel;
       playback = true;
   }
 
-
   if (playback){
-      if (!p.is_open()) p.open("../data/matrix.txt");
-      if(!playbackMovement(p)) {
+      int halfSeconds = (((int) glfwGetTime()) * 2) + (( (int) (glfwGetTime() * 10)) % 10) / 5;
+      if(halfSeconds > keyframeTime)
+      {
+        keyframeTime = halfSeconds;
+        firstModel = secondModel;
+        if (!playbackMovement(p))
+        {
           playback = false;
           p.close();
+        }
+        secondModel = modelMatrix;
+        modelMatrix = firstModel;
+      }
+      else
+      {
+        modelMatrix = firstModel + (secondModel - firstModel) * (( (float) ( (int) (glfwGetTime() * 100) % 50) * 2) / 100); 
       }
   } else {
       generateModelMatrix();
   }
 
   if (record) {
-      if (!f.is_open()) f.open("../data/matrix.txt");
-      printf("%d\n",(int) (glfwGetTime() * 100));
-      recordMovement(f, 0.01);
+      int halfSeconds = (((int) glfwGetTime()) * 2) + (( (int) (glfwGetTime() * 10)) % 10) / 5;
+      if(halfSeconds > keyframeTime)
+      {
+        keyframeTime = halfSeconds;
+        recordMovement(f);
+      }
   }
 
 

@@ -78,17 +78,17 @@ private:
     // Add player to the scene
     auto player = std::make_unique<Player>();
     player->position.y = -6;
-    player->rotation.x = 0;
-    player->rotation.y = ppgso::PI/4.0f;
+    player->rotation.x = ppgso::PI/2.0f;
+    player->rotation.y = ppgso::PI/2.0f;
+    player->cameraFocus = true;
     scene.objects.push_back(move(player));
-
 
     for (int i = 0; i < 100; i++){
         auto water = std::make_unique<Water>();
         water->position.y = i * 2;
         water->position.x = (float)rand()/(float)RAND_MAX;
         water->position.z = (float)rand()/(float)RAND_MAX;
-        water->scale *= 0.1f;
+        water->scale *= 0.05f;
         scene.objects.push_back(move(water));
     }
 
