@@ -64,6 +64,9 @@ public:
   glm::mat4 firstModel;
   glm::mat4 secondModel;
 
+  bool cameraFocus = false;
+  glm::vec3 forward{0,0,0};
+
 protected:
   /*!
    * Generate modelMatrix from position, rotation and scale

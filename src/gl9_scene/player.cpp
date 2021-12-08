@@ -26,15 +26,32 @@ Player::Player() {
 }
 
 bool Player::update(Scene &scene, float dt) {
+  // calculate forward
+    forward.x = sin(rotation.z)*sin(rotation.x);
+    forward.y = cos(rotation.x);
+    forward.z = sin(rotation.x)*cos(rotation.z);
   // Keyboard controls
   if(scene.keyboard[GLFW_KEY_LEFT]) {
-    position.x += 10 * dt;
-    rotation.z = -ppgso::PI/4.0f;
+    rotation.z += ppgso::PI/2.0f * dt;
   } else if(scene.keyboard[GLFW_KEY_RIGHT]) {
-    position.x -= 10 * dt;
-    rotation.z = ppgso::PI/4.0f;
-  } else {
-    rotation.z = 0;
+    rotation.z -= ppgso::PI/2.0f * dt;
+  }
+  
+  if(scene.keyboard[GLFW_KEY_UP])
+  {
+    position -= forward * dt;
+  } else if(scene.keyboard[GLFW_KEY_DOWN])
+  {
+    position += forward * dt;
+  }
+
+  if(scene.keyboard[GLFW_KEY_PAGE_UP])
+  {
+    rotation.x += ppgso::PI/2.0f * dt;
+  }
+  else if (scene.keyboard[GLFW_KEY_PAGE_DOWN])
+  {
+    rotation.x -= ppgso::PI/2.0f * dt;
   }
 
   if (scene.keyboard[GLFW_KEY_B] && record == false)
