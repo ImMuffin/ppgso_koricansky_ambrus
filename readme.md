@@ -39,3 +39,16 @@ if (obj->cameraFocus == true)
     camera->position = obj->position + obj->forward * 2.0f;
 }
 ```
+
+Vodny shader
+``` c++
+vec2 texcoord = texCoord;
+texcoord.x += sin(texcoord.y * 4*2*3.14159 + TimeOffset) / 100;
+```
+
+Priesvitnost a rozmazanost vo vode
+``` c++
+shader->setUniform("Transparency",1.0f);
+shader->setUniform("TimeOffset", (glfwGetTime() * 2*3.14159 * .75));
+```
+
