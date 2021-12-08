@@ -4,6 +4,10 @@
 
 #include <shaders/diffuse_vert_glsl.h>
 #include <shaders/diffuse_frag_glsl.h>
+#include <shaders/convolution_frag_glsl.h>
+#include <shaders/convolution_vert_glsl.h>
+#include <shaders/water_vert_glsl.h>
+#include <shaders/water_frag_glsl.h>
 #include <iostream>
 #include <fstream>
 
@@ -19,7 +23,7 @@ Player::Player() {
   //scale *= 1;
 
   // Initialize static resources if needed
-  if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
+  if (!shader) shader = std::make_unique<ppgso::Shader>(water_vert_glsl, water_frag_glsl);
   if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("fish.bmp"));
   if (!mesh) mesh = std::make_unique<ppgso::Mesh>("fish.obj");
 
@@ -129,7 +133,12 @@ void Player::render(Scene &scene) {
   // render mesh
   shader->setUniform("ModelMatrix", modelMatrix);
   shader->setUniform("Texture", *texture);
+  //
+  shader->setUniform("Transparency",1.0f);
+  shader->setUniform("TimeOffset", (glfwGetTime() * 2*3.14159 * .75)); //vodna animacia
+  glDisable(GL_CULL_FACE); //ryba nemala plutvy
   mesh->render();
+  glEnable(GL_CULL_FACE);
 }
 
 void Player::onClick(Scene &scene) {

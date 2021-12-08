@@ -77,7 +77,7 @@ private:
 
     // Add player to the scene
     auto player = std::make_unique<Player>();
-    player->position.y = -6;
+    player->position.y = 3;
     player->rotation.x = ppgso::PI/2.0f;
     player->rotation.y = ppgso::PI/2.0f;
     player->cameraFocus = true;
@@ -111,6 +111,9 @@ public:
     glEnable(GL_CULL_FACE);
     glFrontFace(GL_CCW);
     glCullFace(GL_BACK);
+
+    glEnable(GL_BLEND); //enable for transparency
+    glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
 
     initScene();
   }

@@ -16,7 +16,7 @@ void Scene::update(float time) {
     if (obj->cameraFocus == true)
     {
       camera->back = obj->position;
-      camera->position = obj->position + obj->forward * 2.0f;
+      //camera->position = obj->position + obj->forward * 2.0f;
       if (fmod(obj->rotation.x, ppgso::PI*2) - ppgso::PI < 0)
       {
         camera->up.y = 1;

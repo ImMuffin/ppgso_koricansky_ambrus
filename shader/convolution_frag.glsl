@@ -10,7 +10,7 @@ out vec4 FragmentColor;
 
 void main(void)
 {
-/*
+
   // Example filters
   float[25] kernel = float[] (
             1.0,  4.0,  6.0,  4.0, 1.0,
@@ -18,18 +18,18 @@ void main(void)
             6.0, 24.0, 36.0, 24.0, 6.0,
             4.0, 16.0, 24.0, 16.0, 4.0,
             1.0,  4.0,  6.0,  4.0, 1.0);
-*/
 
+/*
   float[25] kernel = float[] (
             0.0,  1.0,  1.0,  1.0, 1.0,
            -1.0,  0.0,  1.0,  1.0, 1.0,
            -1.0, -1.0,  0.0,  1.0, 1.0,
            -1.0, -1.0, -1.0,  0.0, 1.0,
            -1.0, -1.0, -1.0, -1.0, 0.0);
-
+*/
   int index = 0;
   vec4 color = vec4(0);
-  float factor = 1.0;
+  float factor = 512.0;
   float bias = 0.0;
 
   for (int i = -2; i <= 2; i++) {

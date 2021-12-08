@@ -48,6 +48,10 @@ void Water::render(Scene &scene) {
     // render mesh
     shader->setUniform("ModelMatrix", modelMatrix);
     shader->setUniform("Texture", *texture);
+
+    // set transparency
+    shader->setUniform("Transparency", 0.3f);
+    shader->setUniform("TimeOffset", (glfwGetTime() * 2*3.14159 * .75));
     mesh->render();
 }
 
