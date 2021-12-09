@@ -1026,6 +1026,16 @@ iostream
 fstream
 -
 
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.h
+ppgso/ppgso.h
+-
+object.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/object.h
+iostream
+-
+fstream
+-
+
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.h
 memory
 -
@@ -1043,6 +1053,8 @@ water.h
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/water.h
 scene.h
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.h
+player.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.h
 shaders/diffuse_vert_glsl.h
 -
 shaders/diffuse_frag_glsl.h

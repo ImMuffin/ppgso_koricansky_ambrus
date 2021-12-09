@@ -583,6 +583,54 @@ shaders/texture_vert_glsl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s
 .PHONY : shaders/texture_vert_glsl.cpp.s
 
+shaders/water_frag_glsl.obj: shaders/water_frag_glsl.cpp.obj
+.PHONY : shaders/water_frag_glsl.obj
+
+# target to build an object file
+shaders/water_frag_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.obj
+.PHONY : shaders/water_frag_glsl.cpp.obj
+
+shaders/water_frag_glsl.i: shaders/water_frag_glsl.cpp.i
+.PHONY : shaders/water_frag_glsl.i
+
+# target to preprocess a source file
+shaders/water_frag_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.i
+.PHONY : shaders/water_frag_glsl.cpp.i
+
+shaders/water_frag_glsl.s: shaders/water_frag_glsl.cpp.s
+.PHONY : shaders/water_frag_glsl.s
+
+# target to generate assembly for a file
+shaders/water_frag_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.s
+.PHONY : shaders/water_frag_glsl.cpp.s
+
+shaders/water_vert_glsl.obj: shaders/water_vert_glsl.cpp.obj
+.PHONY : shaders/water_vert_glsl.obj
+
+# target to build an object file
+shaders/water_vert_glsl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.obj
+.PHONY : shaders/water_vert_glsl.cpp.obj
+
+shaders/water_vert_glsl.i: shaders/water_vert_glsl.cpp.i
+.PHONY : shaders/water_vert_glsl.i
+
+# target to preprocess a source file
+shaders/water_vert_glsl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.i
+.PHONY : shaders/water_vert_glsl.cpp.i
+
+shaders/water_vert_glsl.s: shaders/water_vert_glsl.cpp.s
+.PHONY : shaders/water_vert_glsl.s
+
+# target to generate assembly for a file
+shaders/water_vert_glsl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.s
+.PHONY : shaders/water_vert_glsl.cpp.s
+
 src/gl9_scene/aquarium.obj: src/gl9_scene/aquarium.cpp.obj
 .PHONY : src/gl9_scene/aquarium.obj
 
@@ -823,6 +871,30 @@ src/gl9_scene/scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.s
 .PHONY : src/gl9_scene/scene.cpp.s
 
+src/gl9_scene/wall.obj: src/gl9_scene/wall.cpp.obj
+.PHONY : src/gl9_scene/wall.obj
+
+# target to build an object file
+src/gl9_scene/wall.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/wall.cpp.obj
+.PHONY : src/gl9_scene/wall.cpp.obj
+
+src/gl9_scene/wall.i: src/gl9_scene/wall.cpp.i
+.PHONY : src/gl9_scene/wall.i
+
+# target to preprocess a source file
+src/gl9_scene/wall.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/wall.cpp.i
+.PHONY : src/gl9_scene/wall.cpp.i
+
+src/gl9_scene/wall.s: src/gl9_scene/wall.cpp.s
+.PHONY : src/gl9_scene/wall.s
+
+# target to generate assembly for a file
+src/gl9_scene/wall.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/wall.cpp.s
+.PHONY : src/gl9_scene/wall.cpp.s
+
 src/gl9_scene/water.obj: src/gl9_scene/water.cpp.obj
 .PHONY : src/gl9_scene/water.obj
 
@@ -910,6 +982,12 @@ help:
 	@echo ... shaders/texture_vert_glsl.obj
 	@echo ... shaders/texture_vert_glsl.i
 	@echo ... shaders/texture_vert_glsl.s
+	@echo ... shaders/water_frag_glsl.obj
+	@echo ... shaders/water_frag_glsl.i
+	@echo ... shaders/water_frag_glsl.s
+	@echo ... shaders/water_vert_glsl.obj
+	@echo ... shaders/water_vert_glsl.i
+	@echo ... shaders/water_vert_glsl.s
 	@echo ... src/gl9_scene/aquarium.obj
 	@echo ... src/gl9_scene/aquarium.i
 	@echo ... src/gl9_scene/aquarium.s
@@ -940,6 +1018,9 @@ help:
 	@echo ... src/gl9_scene/scene.obj
 	@echo ... src/gl9_scene/scene.i
 	@echo ... src/gl9_scene/scene.s
+	@echo ... src/gl9_scene/wall.obj
+	@echo ... src/gl9_scene/wall.i
+	@echo ... src/gl9_scene/wall.s
 	@echo ... src/gl9_scene/water.obj
 	@echo ... src/gl9_scene/water.i
 	@echo ... src/gl9_scene/water.s

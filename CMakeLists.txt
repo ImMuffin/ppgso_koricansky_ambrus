@@ -111,7 +111,7 @@ add_executable(gl9_scene
         src/gl9_scene/plant.cpp
         src/gl9_scene/sand.cpp
         src/gl9_scene/water.cpp
-        src/gl9_scene/water.h)
+        src/gl9_scene/water.h src/gl9_scene/wall.cpp src/gl9_scene/wall.h)
 target_link_libraries(gl9_scene ppgso shaders)
 install(TARGETS gl9_scene DESTINATION .)
 add_custom_command(TARGET gl9_scene POST_BUILD COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_SOURCE_DIR}/data/ ${CMAKE_CURRENT_BINARY_DIR})

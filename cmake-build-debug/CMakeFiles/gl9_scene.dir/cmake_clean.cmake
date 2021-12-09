@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj"
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj"
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj"
+  "CMakeFiles/gl9_scene.dir/src/gl9_scene/wall.cpp.obj"
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj"
   "gl9_scene.exe"
   "gl9_scene.exe.manifest"

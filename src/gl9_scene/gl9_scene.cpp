@@ -20,6 +20,7 @@
 #include "plant.h"
 #include "sand.h"
 #include "water.h"
+#include "wall.h"
 
 const unsigned int SIZEX = 1360;
 const unsigned int SIZEY = 720;
@@ -83,7 +84,7 @@ private:
     player->cameraFocus = true;
     scene.objects.push_back(move(player));
 
-    for (int i = 0; i < 100; i++){
+    for (int i = 0; i < 200; i++){
         auto water = std::make_unique<Water>();
         water->position.y = i * 2;
         water->position.x = (float)rand()/(float)RAND_MAX;

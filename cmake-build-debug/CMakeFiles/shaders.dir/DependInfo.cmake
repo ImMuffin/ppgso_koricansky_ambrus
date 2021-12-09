@@ -16,6 +16,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/diffuse_vert_glsl.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_frag_glsl.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_vert_glsl.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj"
+  "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_frag_glsl.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.obj"
+  "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -38,6 +40,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/diffuse_vert_glsl.h" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/diffuse_vert_glsl.cpp"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_frag_glsl.h" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_frag_glsl.cpp"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_vert_glsl.h" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_vert_glsl.cpp"
+  "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_frag_glsl.h" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_frag_glsl.cpp"
+  "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.h" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.cpp"
   )
 
 

@@ -121,10 +121,24 @@ shaders/texture_frag_glsl.cpp: ../shader/texture_frag.glsl
 shaders/texture_frag_glsl.h: shaders/texture_frag_glsl.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate shaders\texture_frag_glsl.h
 
+shaders/water_vert_glsl.cpp: ../shader/water_vert.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating resource from C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/shader/water_vert.glsl"
+	"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -DOUTPUT_C=C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.cpp -DOUTPUT_H=C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.h -DSYMBOL=water_vert_glsl -DINPUT_FILE=C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/shader/water_vert.glsl -P C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake/bin2c.cmake
+
+shaders/water_vert_glsl.h: shaders/water_vert_glsl.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate shaders\water_vert_glsl.h
+
+shaders/water_frag_glsl.cpp: ../shader/water_frag.glsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating resource from C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/shader/water_frag.glsl"
+	"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -DOUTPUT_C=C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_frag_glsl.cpp -DOUTPUT_H=C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_frag_glsl.h -DSYMBOL=water_frag_glsl -DINPUT_FILE=C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/shader/water_frag.glsl -P C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake/bin2c.cmake
+
+shaders/water_frag_glsl.h: shaders/water_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate shaders\water_frag_glsl.h
+
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj: shaders/color_vert_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\color_vert_glsl.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\color_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.i: cmake_force
@@ -138,7 +152,7 @@ CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj: shaders/color_frag_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\color_frag_glsl.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\color_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.i: cmake_force
@@ -152,7 +166,7 @@ CMakeFiles/shaders.dir/shaders/color_frag_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj: shaders/convolution_vert_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\convolution_vert_glsl.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\convolution_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.i: cmake_force
@@ -166,7 +180,7 @@ CMakeFiles/shaders.dir/shaders/convolution_vert_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj: shaders/convolution_frag_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\convolution_frag_glsl.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\convolution_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.i: cmake_force
@@ -180,7 +194,7 @@ CMakeFiles/shaders.dir/shaders/convolution_frag_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj: shaders/diffuse_vert_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\diffuse_vert_glsl.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\diffuse_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.i: cmake_force
@@ -194,7 +208,7 @@ CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj: shaders/diffuse_frag_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\diffuse_frag_glsl.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\diffuse_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.i: cmake_force
@@ -208,7 +222,7 @@ CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: shaders/texture_vert_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\texture_vert_glsl.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\texture_vert_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.i: cmake_force
@@ -222,7 +236,7 @@ CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.s: cmake_force
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: shaders/texture_frag_glsl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\texture_frag_glsl.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\texture_frag_glsl.cpp
 
 CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.i: cmake_force
@@ -233,6 +247,34 @@ CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\texture_frag_glsl.cpp -o CMakeFiles\shaders.dir\shaders\texture_frag_glsl.cpp.s
 
+CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
+CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
+CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.obj: shaders/water_vert_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\water_vert_glsl.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\water_vert_glsl.cpp
+
+CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\water_vert_glsl.cpp > CMakeFiles\shaders.dir\shaders\water_vert_glsl.cpp.i
+
+CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\water_vert_glsl.cpp -o CMakeFiles\shaders.dir\shaders\water_vert_glsl.cpp.s
+
+CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/flags.make
+CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.obj: CMakeFiles/shaders.dir/includes_CXX.rsp
+CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.obj: shaders/water_frag_glsl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\shaders.dir\shaders\water_frag_glsl.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\water_frag_glsl.cpp
+
+CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\water_frag_glsl.cpp > CMakeFiles\shaders.dir\shaders\water_frag_glsl.cpp.i
+
+CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\shaders\water_frag_glsl.cpp -o CMakeFiles\shaders.dir\shaders\water_frag_glsl.cpp.s
+
 # Object files for target shaders
 shaders_OBJECTS = \
 "CMakeFiles/shaders.dir/shaders/color_vert_glsl.cpp.obj" \
@@ -242,7 +284,9 @@ shaders_OBJECTS = \
 "CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj" \
 "CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj" \
 "CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj" \
-"CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj"
+"CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj" \
+"CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.obj" \
+"CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.obj"
 
 # External object files for target shaders
 shaders_EXTERNAL_OBJECTS =
@@ -255,9 +299,11 @@ libshaders.a: CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj
 libshaders.a: CMakeFiles/shaders.dir/shaders/diffuse_frag_glsl.cpp.obj
 libshaders.a: CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj
 libshaders.a: CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj
+libshaders.a: CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.obj
+libshaders.a: CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.obj
 libshaders.a: CMakeFiles/shaders.dir/build.make
 libshaders.a: CMakeFiles/shaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libshaders.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX static library libshaders.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\shaders.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\shaders.dir\link.txt --verbose=$(VERBOSE)
 
@@ -285,6 +331,10 @@ CMakeFiles/shaders.dir/depend: shaders/texture_frag_glsl.cpp
 CMakeFiles/shaders.dir/depend: shaders/texture_frag_glsl.h
 CMakeFiles/shaders.dir/depend: shaders/texture_vert_glsl.cpp
 CMakeFiles/shaders.dir/depend: shaders/texture_vert_glsl.h
+CMakeFiles/shaders.dir/depend: shaders/water_frag_glsl.cpp
+CMakeFiles/shaders.dir/depend: shaders/water_frag_glsl.h
+CMakeFiles/shaders.dir/depend: shaders/water_vert_glsl.cpp
+CMakeFiles/shaders.dir/depend: shaders/water_vert_glsl.h
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles\shaders.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/shaders.dir/depend
 

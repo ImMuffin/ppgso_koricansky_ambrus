@@ -41,7 +41,11 @@ public:
 
     void direct(Object* obj1, Object* obj2);
 
-    void multipleCollisions(Scene &scene);
+    glm::vec3 multipleCollisions(Scene &scene);
+
+    bool collides(Scene &scene);
+
+    glm::vec3 newCollide(Scene &scene);
 };
 
 

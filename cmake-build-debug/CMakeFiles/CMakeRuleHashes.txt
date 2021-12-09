@@ -7,3 +7,5 @@ aff6874b958e697f7c28d44518fefd23 shaders/diffuse_frag_glsl.cpp
 d2eb1a18eb063cf0dc03e87dbac35eef shaders/diffuse_vert_glsl.cpp
 76c5164cc9b1c6a201abf9453e159b2d shaders/texture_frag_glsl.cpp
 c19ff8a0c46a2cf5bfbf4162cbe52837 shaders/texture_vert_glsl.cpp
+9dff3a8e09cb922c0e9bac85476b683e shaders/water_frag_glsl.cpp
+ce8cfef3ec881a957e7109b107ad81d6 shaders/water_vert_glsl.cpp

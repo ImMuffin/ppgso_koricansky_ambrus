@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/shaders.dir/shaders/diffuse_vert_glsl.cpp.obj"
   "CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj"
   "CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj"
+  "CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.obj"
+  "CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.obj"
   "libshaders.a"
   "libshaders.pdb"
   "shaders/color_frag_glsl.cpp"
@@ -25,6 +27,10 @@ file(REMOVE_RECURSE
   "shaders/texture_frag_glsl.h"
   "shaders/texture_vert_glsl.cpp"
   "shaders/texture_vert_glsl.h"
+  "shaders/water_frag_glsl.cpp"
+  "shaders/water_frag_glsl.h"
+  "shaders/water_vert_glsl.cpp"
+  "shaders/water_vert_glsl.h"
 )
 
 # Per-language clean rules from dependency scanning.

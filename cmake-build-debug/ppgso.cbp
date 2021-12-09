@@ -302,6 +302,18 @@
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_vert_glsl.h">
 			<Option target="shaders"/>
 		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_frag_glsl.cpp">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_frag_glsl.cpp.rule">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.cpp">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.cpp.rule">
+			<Option target="shaders"/>
+		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/image.cpp">
 			<Option target="ppgso"/>
 		</Unit>
@@ -405,6 +417,12 @@
 			<Option target="gl9_scene"/>
 		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.h">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/wall.cpp">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/wall.h">
 			<Option target="gl9_scene"/>
 		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/water.cpp">

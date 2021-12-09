@@ -25,3 +25,9 @@ CMakeFiles/shaders.dir/shaders/texture_frag_glsl.cpp.obj: \
 CMakeFiles/shaders.dir/shaders/texture_vert_glsl.cpp.obj: \
  shaders/texture_vert_glsl.cpp \
  shaders/texture_vert_glsl.h
+CMakeFiles/shaders.dir/shaders/water_frag_glsl.cpp.obj: \
+ shaders/water_frag_glsl.cpp \
+ shaders/water_frag_glsl.h
+CMakeFiles/shaders.dir/shaders/water_vert_glsl.cpp.obj: \
+ shaders/water_vert_glsl.cpp \
+ shaders/water_vert_glsl.h

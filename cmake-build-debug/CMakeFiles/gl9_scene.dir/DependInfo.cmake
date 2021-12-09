@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/sand.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj"
+  "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/wall.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/wall.cpp.obj"
   "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/water.cpp" "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

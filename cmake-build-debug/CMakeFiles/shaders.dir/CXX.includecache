@@ -6,43 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/color_frag_glsl.cpp
-color_frag_glsl.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/color_frag_glsl.h
-
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/color_frag_glsl.h
-string
--
-
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/color_vert_glsl.cpp
-color_vert_glsl.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/color_vert_glsl.h
-
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/color_vert_glsl.h
-string
--
-
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/convolution_frag_glsl.cpp
 convolution_frag_glsl.h
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/convolution_frag_glsl.h
 
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/convolution_frag_glsl.h
-string
--
-
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/convolution_vert_glsl.cpp
-convolution_vert_glsl.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/convolution_vert_glsl.h
-
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/convolution_vert_glsl.h
-string
--
-
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/diffuse_frag_glsl.cpp
-diffuse_frag_glsl.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/diffuse_frag_glsl.h
-
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/diffuse_frag_glsl.h
 string
 -
 
@@ -54,19 +22,19 @@ C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shader
 string
 -
 
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_frag_glsl.cpp
-texture_frag_glsl.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_frag_glsl.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_frag_glsl.cpp
+water_frag_glsl.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_frag_glsl.h
 
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_frag_glsl.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_frag_glsl.h
 string
 -
 
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_vert_glsl.cpp
-texture_vert_glsl.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_vert_glsl.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.cpp
+water_vert_glsl.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.h
 
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/texture_vert_glsl.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.h
 string
 -
 

@@ -4,6 +4,7 @@
 
 #include "water.h"
 #include "scene.h"
+#include "player.h"
 
 
 #include <shaders/diffuse_vert_glsl.h>
@@ -25,11 +26,19 @@ Water::Water() {
 }
 
 bool Water::update(Scene &scene, float dt) {
-    position.y -= 0.3f;
 
-    if (position.y < 0)
-        position.y = 0;
-    multipleCollisions(scene);
+
+    for(int i = 0; i < 10; i++){
+        position.y -= 0.05f;
+
+        if (position.y < 0){
+            position.y = 0;
+        }
+
+
+        collide(scene);
+    }
+
 
     generateModelMatrix();
     return true;
@@ -58,6 +67,74 @@ void Water::render(Scene &scene) {
 void Water::collide(Scene &scene) {
 
     for (auto& object : scene.objects){
+        if (dynamic_cast<Water*>(object.get()) == nullptr)
+            continue;
+
+        if (abs(position.x - object->position.x) > scale.x*2 || abs(position.y - object->position.y) > scale.x*2 || abs(position.z - object->position.z) > scale.x*2 )
+            continue;
+
+        glm::vec3 pdif = position - object->position;
+        float dis = glm::length(pdif);
+        float col = dis - scale.x - object->scale.x;
+
+        if (col < 0 && dis != 0) {
+            auto ratio = -col / dis;
+            auto vec = pdif * ratio ;
+            position += vec;
+        }
+
+    }
+}
+
+glm::vec3 Water::multipleCollisions(Scene &scene) {
+
+    glm::vec3 finalVec = {0,0,0};
+
+        for (auto& object : scene.objects){
+            if (position == object->position)
+                continue;
+
+            glm::vec3 pdif = position - object->position;
+            float dis = glm::length(pdif);
+            float col = dis - scale.x - object->scale.x;
+
+            if (col < 0.1f && dis != 0) {
+                auto ratio = -col / dis;
+                auto vec = pdif * ratio;
+                finalVec += vec;
+            }
+
+
+
+    }
+
+    position += finalVec;
+
+    return finalVec;
+
+}
+
+glm::vec3 Water::newCollide(Scene &scene) {
+
+
+    glm::vec3 pdif = position - glm::vec3{2+scale.x, position.y,position.z};
+    float dis = glm::length(pdif);
+    float col = dis - scale.x - scale.x;
+
+    if (col < 0 && dis != 0) {
+        auto ratio = -col / dis;
+        auto vec = pdif * ratio;
+
+        position += vec;
+        position.x = 2 - scale.x;
+    }
+
+
+
+    for (auto &object: scene.objects) {
+        if (dynamic_cast<Water*>(object.get()) == nullptr)
+            continue;
+
         glm::vec3 pdif = position - object->position;
         float dis = glm::length(pdif);
         float col = dis - scale.x - object->scale.x;
@@ -68,27 +145,20 @@ void Water::collide(Scene &scene) {
 
             position += vec;
 
+            }
         }
 
-    }
 }
 
-void Water::multipleCollisions(Scene &scene) {
-
-    glm::vec3 finalVec = {0,0,0};
-
+bool Water::collides(Scene &scene){
     for (auto& object : scene.objects){
         glm::vec3 pdif = position - object->position;
         float dis = glm::length(pdif);
         float col = dis - scale.x - object->scale.x;
 
         if (col < 0 && dis != 0) {
-            auto ratio = -col / dis;
-            auto vec = pdif * ratio;
-            finalVec += vec;
+            return true;
         }
     }
-
-    position += finalVec;
-
+    return false;
 }
