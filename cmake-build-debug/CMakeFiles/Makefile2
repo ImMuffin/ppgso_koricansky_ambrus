@@ -84,7 +84,7 @@ clean: CMakeFiles/gl9_scene.dir/clean
 CMakeFiles/shaders.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\shaders.dir\build.make CMakeFiles/shaders.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43 "Built target shaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Built target shaders"
 .PHONY : CMakeFiles/shaders.dir/all
 
 # Build rule for subdir invocation for target.
@@ -110,7 +110,7 @@ CMakeFiles/shaders.dir/clean:
 CMakeFiles/ppgso.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ppgso.dir\build.make CMakeFiles/ppgso.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ppgso.dir\build.make CMakeFiles/ppgso.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=14,15,16,17,18,19,20,21,22 "Built target ppgso"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23 "Built target ppgso"
 .PHONY : CMakeFiles/ppgso.dir/all
 
 # Build rule for subdir invocation for target.
@@ -137,12 +137,12 @@ CMakeFiles/gl9_scene.dir/all: CMakeFiles/shaders.dir/all
 CMakeFiles/gl9_scene.dir/all: CMakeFiles/ppgso.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target gl9_scene"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target gl9_scene"
 .PHONY : CMakeFiles/gl9_scene.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gl9_scene.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles 44
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/gl9_scene.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/gl9_scene.dir/rule

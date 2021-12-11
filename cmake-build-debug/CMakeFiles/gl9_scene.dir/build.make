@@ -233,6 +233,20 @@ CMakeFiles/gl9_scene.dir/src/gl9_scene/wall.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/wall.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\wall.cpp -o CMakeFiles\gl9_scene.dir\src\gl9_scene\wall.cpp.s
 
+CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.obj: CMakeFiles/gl9_scene.dir/flags.make
+CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.obj: CMakeFiles/gl9_scene.dir/includes_CXX.rsp
+CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.obj: ../src/gl9_scene/bubble.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gl9_scene.dir\src\gl9_scene\bubble.cpp.obj -c C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\bubble.cpp
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\bubble.cpp > CMakeFiles\gl9_scene.dir\src\gl9_scene\bubble.cpp.i
+
+CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\src\gl9_scene\bubble.cpp -o CMakeFiles\gl9_scene.dir\src\gl9_scene\bubble.cpp.s
+
 # Object files for target gl9_scene
 gl9_scene_OBJECTS = \
 "CMakeFiles/gl9_scene.dir/src/gl9_scene/gl9_scene.cpp.obj" \
@@ -246,7 +260,8 @@ gl9_scene_OBJECTS = \
 "CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.obj" \
 "CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj" \
 "CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj" \
-"CMakeFiles/gl9_scene.dir/src/gl9_scene/wall.cpp.obj"
+"CMakeFiles/gl9_scene.dir/src/gl9_scene/wall.cpp.obj" \
+"CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.obj"
 
 # External object files for target gl9_scene
 gl9_scene_EXTERNAL_OBJECTS =
@@ -263,6 +278,7 @@ gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/plant.cpp.obj
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/wall.cpp.obj
+gl9_scene.exe: CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.obj
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/build.make
 gl9_scene.exe: libppgso.a
 gl9_scene.exe: libshaders.a
@@ -271,7 +287,7 @@ gl9_scene.exe: ../dependencies/lib/mingw/libglew32.a
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/linklibs.rsp
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/objects1.rsp
 gl9_scene.exe: CMakeFiles/gl9_scene.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable gl9_scene.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\adyko\Documents\GitHub\ppgso_koricansky_ambrus\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable gl9_scene.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gl9_scene.dir\link.txt --verbose=$(VERBOSE)
 	"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E copy_directory C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/data/ C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug
 

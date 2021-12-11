@@ -308,10 +308,16 @@
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_frag_glsl.cpp.rule">
 			<Option target="shaders"/>
 		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_frag_glsl.h">
+			<Option target="shaders"/>
+		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.cpp">
 			<Option target="shaders"/>
 		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.cpp.rule">
+			<Option target="shaders"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug/shaders/water_vert_glsl.h">
 			<Option target="shaders"/>
 		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/image.cpp">
@@ -366,6 +372,12 @@
 			<Option target="gl9_scene"/>
 		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/aquarium.h">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/bubble.cpp">
+			<Option target="gl9_scene"/>
+		</Unit>
+		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/bubble.h">
 			<Option target="gl9_scene"/>
 		</Unit>
 		<Unit filename="C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/camera.cpp">

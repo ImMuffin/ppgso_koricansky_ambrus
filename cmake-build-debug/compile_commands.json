@@ -148,5 +148,10 @@
   "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
   "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\wall.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\src\\gl9_scene\\wall.cpp",
   "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/wall.cpp"
+},
+{
+  "directory": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\MINGW-~1\\X86_64~1.0-W\\mingw64\\bin\\G__~1.EXE -DGLEW_STATIC -DGLM_FORCE_RADIANS @CMakeFiles/gl9_scene.dir/includes_CXX.rsp -fopenmp -g -Wpedantic -Wall -Wno-c++98-compat -Wextra -Wno-sign-conversion -Wno-unused-parameter -std=gnu++14 -o CMakeFiles\\gl9_scene.dir\\src\\gl9_scene\\bubble.cpp.obj -c C:\\Users\\adyko\\Documents\\GitHub\\ppgso_koricansky_ambrus\\src\\gl9_scene\\bubble.cpp",
+  "file": "C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/bubble.cpp"
 }
 ]

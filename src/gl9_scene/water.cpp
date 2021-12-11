@@ -79,8 +79,9 @@ void Water::collide(Scene &scene) {
 
         if (col < 0 && dis != 0) {
             auto ratio = -col / dis;
-            auto vec = pdif * ratio ;
+            auto vec = pdif * ratio;
             position += vec;
+            //position = {roundf(position.x * 1000) / 1000,roundf(position.y * 1000) / 1000,roundf(position.z * 1000) / 1000};
         }
 
     }

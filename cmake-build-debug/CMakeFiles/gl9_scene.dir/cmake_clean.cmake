@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.obj"
+  "CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.obj"
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/camera.cpp.obj"
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/castle.cpp.obj"
   "CMakeFiles/gl9_scene.dir/src/gl9_scene/chest.cpp.obj"

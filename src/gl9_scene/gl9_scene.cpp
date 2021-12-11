@@ -21,6 +21,7 @@
 #include "sand.h"
 #include "water.h"
 #include "wall.h"
+#include "bubble.h"
 
 const unsigned int SIZEX = 1360;
 const unsigned int SIZEY = 720;
@@ -92,6 +93,17 @@ private:
         water->scale *= 0.05f;
         scene.objects.push_back(move(water));
     }
+
+    for (int i = 0; i < 100; i++){
+        auto bubble = std::make_unique<Bubble>();
+        bubble->velocity = (float)rand()/(float)(RAND_MAX/0.3-0.02) + 0.02;
+        bubble->position.y = 0 - i*2;
+        bubble->position.x = (float)rand()/(float)RAND_MAX;
+        bubble->position.z = (float)rand()/(float)RAND_MAX;
+        bubble->scale *= 0.05f;
+        scene.objects.push_back(move(bubble));
+    }
+
 
   }
 

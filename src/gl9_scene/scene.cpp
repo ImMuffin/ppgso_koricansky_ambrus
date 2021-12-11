@@ -31,6 +31,10 @@ void Scene::update(float time) {
 }
 
 void Scene::render() {
+  // Object cleanup
+  for ( auto& obj : objects )
+        if (obj->scale.x <= 0)
+            objects.remove(obj);
   // Simply render all objects
   for ( auto& obj : objects )
       obj->render(*this);

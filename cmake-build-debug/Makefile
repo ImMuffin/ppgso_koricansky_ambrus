@@ -655,6 +655,30 @@ src/gl9_scene/aquarium.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.s
 .PHONY : src/gl9_scene/aquarium.cpp.s
 
+src/gl9_scene/bubble.obj: src/gl9_scene/bubble.cpp.obj
+.PHONY : src/gl9_scene/bubble.obj
+
+# target to build an object file
+src/gl9_scene/bubble.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.obj
+.PHONY : src/gl9_scene/bubble.cpp.obj
+
+src/gl9_scene/bubble.i: src/gl9_scene/bubble.cpp.i
+.PHONY : src/gl9_scene/bubble.i
+
+# target to preprocess a source file
+src/gl9_scene/bubble.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.i
+.PHONY : src/gl9_scene/bubble.cpp.i
+
+src/gl9_scene/bubble.s: src/gl9_scene/bubble.cpp.s
+.PHONY : src/gl9_scene/bubble.s
+
+# target to generate assembly for a file
+src/gl9_scene/bubble.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gl9_scene.dir\build.make CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.s
+.PHONY : src/gl9_scene/bubble.cpp.s
+
 src/gl9_scene/camera.obj: src/gl9_scene/camera.cpp.obj
 .PHONY : src/gl9_scene/camera.obj
 
@@ -991,6 +1015,9 @@ help:
 	@echo ... src/gl9_scene/aquarium.obj
 	@echo ... src/gl9_scene/aquarium.i
 	@echo ... src/gl9_scene/aquarium.s
+	@echo ... src/gl9_scene/bubble.obj
+	@echo ... src/gl9_scene/bubble.i
+	@echo ... src/gl9_scene/bubble.s
 	@echo ... src/gl9_scene/camera.obj
 	@echo ... src/gl9_scene/camera.i
 	@echo ... src/gl9_scene/camera.s
