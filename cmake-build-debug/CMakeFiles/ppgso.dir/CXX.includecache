@@ -862,22 +862,6 @@ C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/texture.h
 tiny_obj_loader.h
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/tiny_obj_loader.h
 
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/shader.cpp
-iostream
--
-sstream
--
-GL/glew.h
--
-glm/glm.hpp
--
-glm/gtc/type_ptr.hpp
--
-texture.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/texture.h
-shader.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/shader.h
-
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/ppgso/shader.h
 string
 -

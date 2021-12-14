@@ -53,11 +53,20 @@ private:
     chest->scale *= 0.04f;
     scene.objects.push_back(move(chest));*/
 
+<<<<<<< HEAD
     // add aquarium 
     auto aquarium = std::make_unique<Aquarium>();
     scene.objects.push_back(move(aquarium));
+=======
+>>>>>>> e4fca13eb864b5981bf231d04503f341dfd623af
 
-    // add castle 
+    auto aquarium = std::make_unique<Aquarium>();
+    aquarium->scale = glm::vec3{0.1,0.1,0.1};
+    aquarium->rotation.x = 3;
+
+    scene.objects.push_back(move(aquarium));
+
+
     /*auto castle = std::make_unique<Castle>();
     castle->rotation.x = -ppgso::PI/2.0f;
     castle->scale *= 0.2;
@@ -72,9 +81,9 @@ private:
     scene.objects.push_back(move(plant));*/
 
     // add sand
-    /*auto sand = std::make_unique<Sand>();
+    auto sand = std::make_unique<Sand>();
     sand->rotation.z = -ppgso::PI/2.0f;
-    scene.objects.push_back(move(sand));*/
+    scene.objects.push_back(move(sand));
     
 
     // Add player to the scene
@@ -103,11 +112,6 @@ private:
         bubble->scale *= 0.05f;
         scene.objects.push_back(move(bubble));
     }
-
-    auto cube = std::make_unique<Wall>();
-    cube->scale = glm::vec3 {0.5,0.1,0.5};
-    cube->position.y = 0.1;
-    scene.objects.push_back(move(cube));
 
 
   }
@@ -197,7 +201,8 @@ public:
       }
     }
     if(button == GLFW_MOUSE_BUTTON_RIGHT) {
-      scene.cursor.right = action == GLFW_PRESS;
+
+        scene.cursor.right = action == GLFW_PRESS;
     }
   }
 
@@ -220,6 +225,8 @@ public:
     // Update and render all objects
     scene.update(dt);
     scene.render();
+
+
   }
 };
 

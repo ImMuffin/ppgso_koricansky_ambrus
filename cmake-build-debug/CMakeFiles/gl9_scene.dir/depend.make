@@ -123,6 +123,7 @@ CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.obj: \
  ../src/gl9_scene/camera.h \
  ../src/gl9_scene/object.h \
  ../src/gl9_scene/scene.h \
+ ../src/gl9_scene/water.h \
  shaders/diffuse_frag_glsl.h \
  shaders/diffuse_vert_glsl.h
 CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.obj: \
@@ -1597,6 +1598,7 @@ CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj: \
  ../src/gl9_scene/camera.h \
  ../src/gl9_scene/object.h \
  ../src/gl9_scene/player.h \
+ ../src/gl9_scene/sand.h \
  ../src/gl9_scene/scene.h \
  ../src/gl9_scene/water.cpp \
  ../src/gl9_scene/water.h \

@@ -1026,6 +1026,26 @@ iostream
 fstream
 -
 
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.h
+ppgso/ppgso.h
+-
+object.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/object.h
+iostream
+-
+fstream
+-
+
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/sand.h
+ppgso/ppgso.h
+-
+object.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/object.h
+iostream
+-
+fstream
+-
+
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.h
 memory
 -
@@ -1038,23 +1058,19 @@ C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/object.h
 camera.h
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/camera.h
 
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/wall.cpp
-wall.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/wall.h
-scene.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/water.cpp
 water.h
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/water.h
+scene.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.h
+player.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.h
+sand.h
+C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/sand.h
 shaders/diffuse_vert_glsl.h
 -
 shaders/diffuse_frag_glsl.h
 -
-
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/wall.h
-ppgso/ppgso.h
--
-object.h
-C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/object.h
 
 C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/water.h
 ppgso/ppgso.h
