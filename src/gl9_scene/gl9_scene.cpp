@@ -104,6 +104,11 @@ private:
         scene.objects.push_back(move(bubble));
     }
 
+    auto cube = std::make_unique<Wall>();
+    cube->scale = glm::vec3 {0.5,0.1,0.5};
+    cube->position.y = 0.1;
+    scene.objects.push_back(move(cube));
+
 
   }
 

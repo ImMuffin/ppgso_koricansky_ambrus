@@ -26,6 +26,9 @@ Bubble::Bubble() {
 
 bool Bubble::update(Scene &scene, float dt) {
 
+    if (scale.x <= 0)
+        return false;
+
     position.y += velocity;
 
     if (position.y > 3){

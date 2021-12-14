@@ -38,6 +38,7 @@ public:
      */
     void render(Scene &scene) override;
     void merge(Scene &scene);
+    void fluid(Scene &scene);
 };
 
 

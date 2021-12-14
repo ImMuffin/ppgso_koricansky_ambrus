@@ -45,6 +45,7 @@ namespace ppgso {
      * Render the geometry associated with the mesh using glDrawElements.
      */
     void render();
+
   };
 }
 

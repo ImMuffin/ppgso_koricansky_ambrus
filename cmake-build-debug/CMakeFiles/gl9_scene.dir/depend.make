@@ -1100,8 +1100,12 @@ CMakeFiles/gl9_scene.dir/src/gl9_scene/player.cpp.obj: \
  ../src/gl9_scene/player.cpp \
  ../src/gl9_scene/player.h \
  ../src/gl9_scene/scene.h \
+ shaders/convolution_frag_glsl.h \
+ shaders/convolution_vert_glsl.h \
  shaders/diffuse_frag_glsl.h \
- shaders/diffuse_vert_glsl.h
+ shaders/diffuse_vert_glsl.h \
+ shaders/water_frag_glsl.h \
+ shaders/water_vert_glsl.h
 CMakeFiles/gl9_scene.dir/src/gl9_scene/sand.cpp.obj: \
  ../dependencies/include/GL/glew.h \
  ../dependencies/include/GLFW/glfw3.h \
@@ -1346,7 +1350,8 @@ CMakeFiles/gl9_scene.dir/src/gl9_scene/scene.cpp.obj: \
  ../src/gl9_scene/camera.h \
  ../src/gl9_scene/object.h \
  ../src/gl9_scene/scene.cpp \
- ../src/gl9_scene/scene.h
+ ../src/gl9_scene/scene.h \
+ ../src/gl9_scene/water.h
 CMakeFiles/gl9_scene.dir/src/gl9_scene/wall.cpp.obj: \
  ../dependencies/include/GL/glew.h \
  ../dependencies/include/GLFW/glfw3.h \
@@ -1469,6 +1474,7 @@ CMakeFiles/gl9_scene.dir/src/gl9_scene/wall.cpp.obj: \
  ../src/gl9_scene/scene.h \
  ../src/gl9_scene/wall.cpp \
  ../src/gl9_scene/wall.h \
+ ../src/gl9_scene/water.h \
  shaders/diffuse_frag_glsl.h \
  shaders/diffuse_vert_glsl.h
 CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj: \

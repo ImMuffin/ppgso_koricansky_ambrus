@@ -85,3 +85,4 @@ void ppgso::Mesh::render() {
     glDrawElements(GL_TRIANGLES, buffer.size, GL_UNSIGNED_INT, nullptr);
   }
 }
+
