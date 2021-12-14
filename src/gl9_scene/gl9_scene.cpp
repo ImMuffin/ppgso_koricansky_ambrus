@@ -54,8 +54,8 @@ private:
     scene.objects.push_back(move(chest));*/
 
     // add aquarium 
-    //auto aquarium = std::make_unique<Aquarium>();
-    //scene.objects.push_back(move(aquarium));
+    auto aquarium = std::make_unique<Aquarium>();
+    scene.objects.push_back(move(aquarium));
 
     // add castle 
     /*auto castle = std::make_unique<Castle>();
