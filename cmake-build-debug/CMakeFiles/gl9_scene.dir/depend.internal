@@ -123,6 +123,7 @@ CMakeFiles/gl9_scene.dir/src/gl9_scene/aquarium.cpp.obj
  C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/camera.h
  C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/object.h
  C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.h
+ C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/water.h
  shaders/diffuse_frag_glsl.h
  shaders/diffuse_vert_glsl.h
 CMakeFiles/gl9_scene.dir/src/gl9_scene/bubble.cpp.obj
@@ -1597,6 +1598,7 @@ CMakeFiles/gl9_scene.dir/src/gl9_scene/water.cpp.obj
  C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/camera.h
  C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/object.h
  C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/player.h
+ C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/sand.h
  C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/scene.h
  C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/water.cpp
  C:/Users/adyko/Documents/GitHub/ppgso_koricansky_ambrus/src/gl9_scene/water.h

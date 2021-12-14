@@ -5,6 +5,7 @@
 #include "water.h"
 #include "scene.h"
 #include "player.h"
+#include "sand.h"
 
 
 #include <shaders/diffuse_vert_glsl.h>
@@ -35,7 +36,9 @@ bool Water::update(Scene &scene, float dt) {
             position.y = 0;
         }
 
+        newCollide(scene);
         collide(scene);
+
     }
 
 
@@ -66,6 +69,7 @@ void Water::render(Scene &scene) {
 void Water::collide(Scene &scene) {
 
     for (auto& object : scene.objects){
+
         if (dynamic_cast<Water*>(object.get()) == nullptr)
             continue;
 
@@ -116,25 +120,14 @@ glm::vec3 Water::multipleCollisions(Scene &scene) {
 
 glm::vec3 Water::newCollide(Scene &scene) {
 
-
     for (auto& object : scene.objects){
-        if (dynamic_cast<Water*>(object.get()) == nullptr)
+        if (dynamic_cast<Sand*>(object.get()) != nullptr)
+        {
+            if (object->position.y+object->scale.y > position.y-scale.y){
+                position.y = object->position.y + object->scale.y + scale.y;
+            }
             continue;
-
-        if (abs(position.x - object->position.x) > scale.x*2 || abs(position.y - object->position.y) > scale.x*2 || abs(position.z - object->position.z) > scale.x*2 )
-            continue;
-
-        glm::vec3 pdif = position - object->position;
-        float dis = glm::length(pdif);
-        float col = dis - scale.x - object->scale.x;
-
-        if (col < 0 && dis != 0) {
-            auto ratio = -col / dis;
-            auto vec = pdif * ratio;
-            position += vec;
-            //position = {roundf(position.x * 1000) / 1000,roundf(position.y * 1000) / 1000,roundf(position.z * 1000) / 1000};
         }
-
     }
 
 }

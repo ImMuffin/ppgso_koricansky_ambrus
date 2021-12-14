@@ -27,6 +27,15 @@ Wall::Wall() {
 
 bool Wall::update(Scene &scene, float dt) {
 
+    if (scale.x <= 0)
+        return false;
+
+    position.y -= 0.2f;
+
+    if (position.y < 0){
+        position.y = 0;
+    }
+
     merge(scene);
     fluid(scene);
 
@@ -57,6 +66,7 @@ void Wall::render(Scene &scene) {
 void Wall::merge(Scene &scene){
 
     for (auto& object : scene.objects){
+
         if (dynamic_cast<Water*>(object.get()) == nullptr)
             continue;
 
@@ -64,7 +74,7 @@ void Wall::merge(Scene &scene){
             float objVol = 4/3*3.14*object->scale.x*object->scale.x*object->scale.x;
             float waterVol = scale.x*scale.y*scale.z*8;
             object->scale =glm::vec3 {0,0,0};
-            float scaleOffset = objVol / (scale.x*scale.z*4);
+            float scaleOffset = objVol / (scale.x*scale.z*8);
             scale.y += scaleOffset;
             position.y += scaleOffset;
         }
