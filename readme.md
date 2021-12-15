@@ -30,24 +30,70 @@ Truhla vtiahne rybky a animácia sa končí. V pozadí sa zablisne.
 Počas implementácie sme sa pokúšali držať plánu. V rámci naších technických zdatností sme museli originálny návrh upraviť.
 
 V prvej scéne krúžime okolo akvárka a sledujeme, ako sa napĺňa vodou.
-![Img1](./readme%20images/obrazoknovy1.png)
+![Img1.1](./readme%20images/obrazoknovy1.png)
 ---
-
+Druhá scéna začína v akvárku, kde sledujeme pohyb ryby.
+![Img1.2](./readme%20images/obrazoknovy2.jpg)
+---
+Po preskúmaní akvárka, ryba dopláva k hradu.
+![Img1.3](./readme%20images/obrazoknovy3.jpg)
+---
+Pri hrade nájde rybka kamaráta.
+![Img1.4](./readme%20images/obrazoknovy4.jpg)
+---
+Rybky spolu plávajú, počas čoho nájdu truhlu z ktorej vychádzajú bublinky.
+![Img1.5](./readme%20images/obrazoknovy5.jpg)
+---
 ## Implementacia
 
-Ovladanie:
+### Ovládanie:
 B: Nahravanie pohybu
+
 N: Zastavenie nahravania
+
 M: Prehravanie
 
 R: Prva scena
+
 T: Druha scena
+
 Y: Bublinky
+
 H: Bez bubliniek
 
 U: Napojit kameru
+
 I: Odpojit kameru
 
+### Popis hierarchického pohybu
+Poloha objektov nachádzajúcich sa v akváriu as odvíja od štartovacieho bloku akvária (spodku akvária). Túto hierarchiu sme dosiali násobením matíc `modelMatrix`.
+
+![Img1.5](./readme%20images/hierarchickypohyb.jpg)
+``` c++
+if (obj->master) //set object for connected motion
+{
+    masterObject = obj;
+}
+
+if ((masterObject != nullptr) && (obj->slave == true)) //connected motion
+{
+    glm::mat4 originalModel = obj->modelMatrix;
+    obj->modelMatrix = masterObject->modelMatrix;
+    obj->modelMatrix *= originalModel;
+}
+```
+
+Časť hierarchie je dosiahnutá naviazaním pohybu kamery na pohyb hráča pomocou premennej `cameraFocus`
+
+``` c++
+if (obj->cameraFocus == true)
+{
+    camera->back = obj->position;
+    camera->position = obj->position + obj->forward * 2.0f;
+}
+```
+
+---
 Co je dopredu?
 ``` c++
 forward.x = sin(rotation.z)*sin(rotation.x);
@@ -66,15 +112,6 @@ else
     camera->up.y = -1;
 }
 camera->update();
-```
-
-Pohyb kamery pripojeny na rybu. CameraFocus urcuje ktory objekt sledujeme.
-``` c++
-if (obj->cameraFocus == true)
-{
-    camera->back = obj->position;
-    camera->position = obj->position + obj->forward * 2.0f;
-}
 ```
 
 Vodny shader
@@ -143,21 +180,6 @@ void Scene::redistributeObjects()
     }
     i++;
   }
-}
-```
-
-hierarchicky pohyb na zaklade nasobenia model matrix
-``` c++
-if (obj->master) //set object for connected motion
-{
-    masterObject = obj;
-}
-
-if ((masterObject != nullptr) && (obj->slave == true)) //connected motion
-{
-    glm::mat4 originalModel = obj->modelMatrix;
-    obj->modelMatrix = masterObject->modelMatrix;
-    obj->modelMatrix *= originalModel;
 }
 ```
 
