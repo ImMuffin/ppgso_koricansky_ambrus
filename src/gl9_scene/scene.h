@@ -36,7 +36,6 @@ class Scene {
      * @param direction - Direction to pick objects from
      * @return Objects - Vector of pointers to intersected objects
      */
-    std::vector<Object*> intersect(const glm::vec3 &position, const glm::vec3 &direction);
 
     // Camera object
     std::unique_ptr<Camera> camera;
@@ -48,8 +47,9 @@ class Scene {
     std::map< int, int > keyboard;
 
     // Lights, in this case using only simple directional diffuse lighting
-    glm::vec3 lightDirection{0, 1.0f, 0.0f};
-    glm::vec3 lightColor{0, 0, 1};
+    glm::vec3 lightDirection{0, 1.0f, 0};
+    glm::vec3 lightColor{0, 0, 0};
+    glm::vec3 lightSource{0, 10, 0};
 
     bool generateBubbles = false;
 

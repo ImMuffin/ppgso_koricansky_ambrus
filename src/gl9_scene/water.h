@@ -1,10 +1,3 @@
-//
-// Created by adyko on 11/30/2021.
-//
-
-#ifndef PPGSO_WATER_H
-#define PPGSO_WATER_H
-
 #include <ppgso/ppgso.h>
 
 #include "object.h"
@@ -39,14 +32,4 @@ public:
 
     void collide(Scene &scene);
 
-    void direct(Object* obj1, Object* obj2);
-
-    glm::vec3 multipleCollisions(Scene &scene);
-
-    bool collides(Scene &scene);
-
-    glm::vec3 newCollide(Scene &scene);
 };
-
-
-#endif //PPGSO_WATER_H

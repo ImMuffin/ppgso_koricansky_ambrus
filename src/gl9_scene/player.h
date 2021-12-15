@@ -5,11 +5,6 @@
 #include <iostream>
 #include <fstream>
 
-/*!
- * Simple object representing the player
- * Reads keyboard status and manipulates its own position
- * On Update checks collisions with Asteroid objects in the scene
- */
 class Player final : public Object {
 private:
   // Static resources (Shared between instances)
@@ -41,8 +36,8 @@ public:
    * Player click event
    * @param scene
    */
-  void onClick(Scene &scene) override ;
 
   bool playable = false;
+
 };
 

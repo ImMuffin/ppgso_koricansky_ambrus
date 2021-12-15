@@ -1,7 +1,3 @@
-//
-// Created by adyko on 11/30/2021.
-//
-
 #include "water.h"
 #include "scene.h"
 #include "player.h"
@@ -28,13 +24,13 @@ Water::Water() {
 
 bool Water::update(Scene &scene, float dt) {
 
-    speed.x = -(fallSpeed * 1.1 * dt);
-    speed.y = -(fallSpeed * 1.5 * dt);
-    speed.z = -(fallSpeed * 1.1 * dt);
+    //speed.x = -(fallSpeed * 1.1 * dt);
+    //speed.y = -(fallSpeed * 1.5 * dt);
+    //speed.z = -(fallSpeed * 1.1 * dt);
 
-    //speed.x = -(10 * dt);
-    //speed.y = -(10 * dt);
-    //speed.z = -(10 * dt);
+    speed.x = -(10 * dt);
+    speed.y = -(10 * dt);
+    speed.z = -(10 * dt);
     position.y += -(fallSpeed * dt);
     collide(scene);
 
@@ -86,59 +82,4 @@ void Water::collide(Scene &scene) {
         }
 
     }
-}
-
-glm::vec3 Water::multipleCollisions(Scene &scene) {
-
-    glm::vec3 finalVec = {0,0,0};
-
-        for (auto& object : scene.objects){
-            if (position == object->position)
-                continue;
-
-            glm::vec3 pdif = position - object->position;
-            float dis = glm::length(pdif);
-            float col = dis - scale.x - object->scale.x;
-
-            if (col < 0.1f && dis != 0) {
-                auto ratio = -col / dis;
-                auto vec = pdif * ratio;
-                finalVec += vec;
-            }
-
-
-
-    }
-
-    position += finalVec;
-
-    return finalVec;
-
-}
-
-glm::vec3 Water::newCollide(Scene &scene) {
-
-    for (auto& object : scene.objects){
-        if (dynamic_cast<Sand*>(object.get()) != nullptr)
-        {
-            if (object->position.y+object->scale.y > position.y-scale.y){
-                position.y = object->position.y + object->scale.y + scale.y;
-            }
-            continue;
-        }
-    }
-
-}
-
-bool Water::collides(Scene &scene){
-    for (auto& object : scene.objects){
-        glm::vec3 pdif = position - object->position;
-        float dis = glm::length(pdif);
-        float col = dis - scale.x - object->scale.x;
-
-        if (col < 0 && dis != 0) {
-            return true;
-        }
-    }
-    return false;
 }

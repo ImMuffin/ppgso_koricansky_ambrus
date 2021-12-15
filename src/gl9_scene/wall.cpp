@@ -1,10 +1,8 @@
-//
-// Created by adyko on 12/2/2021.
-//
-
 #include "wall.h"
 #include "scene.h"
 #include "water.h"
+#include "player.h"
+#include "sand.h"
 
 
 #include <shaders/diffuse_vert_glsl.h>
@@ -17,27 +15,52 @@ std::unique_ptr<ppgso::Shader> Wall::shader;
 
 Wall::Wall() {
     //Scale the default model
-    scale *= 3.0f;
+    scale.y *= 0.05;
 
     // Initialize static resources if needed
     if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
     if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("aquarium.bmp"));
-    if (!mesh) mesh = std::make_unique<ppgso::Mesh>("cube.obj");
+    if (!mesh) mesh = std::make_unique<ppgso::Mesh>("ball.obj");
 }
 
 bool Wall::update(Scene &scene, float dt) {
 
-    if (scale.x <= 0)
-        return false;
+    float sandPos = 0;
+    float sandY = 0;
 
-    position.y -= 0.2f;
+    for (auto& object : scene.objects){
 
-    if (position.y < 0){
-        position.y = 0;
+        if (dynamic_cast<Sand*>(object.get()) == nullptr)
+            continue;
+        sandPos = object->position.y;
+        sandY = object->scale.y;
+        
+
     }
 
-    merge(scene);
-    fluid(scene);
+    for (auto& object : scene.objects){
+
+        if (dynamic_cast<Player*>(object.get()) == nullptr)
+            continue;
+
+        glm::vec3 pdif = scene.lightSource - object->position;
+
+        float newY = sandPos + sandY;
+
+        position = object->position;
+        
+        while (position.y > newY){
+            position -= pdif / (float)1000;
+        }
+        position.y = 0.8;
+
+        glm::vec3 pdif2 = object->position - position;
+
+        float ratio2 = glm::length(pdif2)/glm::length(pdif);
+
+        scale.x = 0.1 + ratio2/5;
+        scale.z = 0.1 + ratio2/5;
+    }
 
     generateModelMatrix();
     return true;
@@ -48,7 +71,7 @@ void Wall::render(Scene &scene) {
 
     // Set up light
     shader->setUniform("LightDirection", scene.lightDirection);
-    shader->setUniform("LightColor", scene.lightColor);
+    shader->setUniform("LightColor", glm::vec3{0,0,0});
 
     // use camera
     shader->setUniform("ProjectionMatrix", scene.camera->projectionMatrix);
@@ -59,7 +82,7 @@ void Wall::render(Scene &scene) {
     shader->setUniform("Texture", *texture);
 
     // set transparency
-    shader->setUniform("Transparency", 0.3f);
+    shader->setUniform("Transparency", 0.8f);
     shader->setUniform("TimeOffset", (glfwGetTime() * 2*3.14159 * .75));
     mesh->render();
 }

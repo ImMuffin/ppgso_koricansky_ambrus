@@ -48,7 +48,7 @@ public:
    * Event to be called when the object is clicked
    * @param scene
    */
-  virtual void onClick(Scene &scene) {};
+  
 
   // Object properties
   glm::vec3 position{0,0,0};

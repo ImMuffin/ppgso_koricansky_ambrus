@@ -74,7 +74,7 @@ void Scene::update(float time) {
           }
           if (collisionCounter == 3)
           {
-            obj->fallSpeed *= 1; //1 pre aktivnejsiu sim, 0.2 pre splash
+            obj->fallSpeed *= 0.2; //1 pre aktivnejsiu sim, 0.2 pre splash
             if (oObj->normal.x != 0)
             {
               obj->position.x -= obj->speed.x * oObj->normal.x;
@@ -150,34 +150,4 @@ void Scene::redistributeObjects()
   }
 } 
 
-std::vector<Object*> Scene::intersect(const glm::vec3 &position, const glm::vec3 &direction) {
-  std::vector<Object*> intersected = {};
-  for(auto& object : objects) {
-    // Collision with sphere of size object->scale.x
-    auto oc = position - object->position;
-    auto radius = object->scale.x;
-    auto a = glm::dot(direction, direction);
-    auto b = glm::dot(oc, direction);
-    auto c = glm::dot(oc, oc) - radius * radius;
-    auto dis = b * b - a * c;
 
-    if (dis > 0) {
-      auto e = sqrt(dis);
-      auto t = (-b - e) / a;
-
-      if ( t > 0 ) {
-        intersected.push_back(object.get());
-        continue;
-      }
-
-      t = (-b + e) / a;
-
-      if ( t > 0 ) {
-        intersected.push_back(object.get());
-        continue;
-      }
-    }
-  }
-
-  return intersected;
-}

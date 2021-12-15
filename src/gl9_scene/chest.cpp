@@ -1,7 +1,3 @@
-//
-// Created by adyko on 11/18/2021.
-//
-
 #include "chest.h"
 #include "scene.h"
 

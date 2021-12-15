@@ -1,11 +1,3 @@
-// Example gl_scene
-// - Introduces the concept of a dynamic scene of objects
-// - Uses abstract object interface for Update and Render steps
-// - Creates a simple game scene with Player, Asteroid and Space objects
-// - Contains a generator object that does not render but adds Asteroids to the scene
-// - Some objects use shared resources and all object deallocations are handled automatically
-// - Controls: LEFT, RIGHT, "R" to reset, SPACE to fire
-
 #include <iostream>
 #include <map>
 #include <list>
@@ -23,6 +15,7 @@
 #include "wall.h"
 #include "bubble.h"
 
+
 const unsigned int SIZEX = 1360;
 const unsigned int SIZEY = 720;
 
@@ -33,11 +26,8 @@ class SceneWindow : public ppgso::Window {
 private:
   Scene scene;
   bool animate = true;
+  bool colorChange = true;
 
-  /*!
-   * Reset and initialize the game scene
-   * Creating unique smart pointers to objects that are stored in the scene object list
-   */
   void initScene1()
   {
     scene.objects.clear();
@@ -101,7 +91,7 @@ private:
         //water->size = {5.4,5.4,5.4};
         water->size = {0.54f,0.54f,0.54f};
         water->scale *= 0.6;
-        water->fallSpeed = 10;
+        water->fallSpeed = 25;
         scene.objects.push_back(move(water));
     }
 
@@ -230,6 +220,8 @@ private:
 
     aqwall6->position.y = 6;
 
+    auto shadow = std::make_unique<Wall>();
+
     scene.objects.push_back(move(player));
     scene.objects.push_back(move(fish));
     scene.objects.push_back(move(chest));
@@ -241,6 +233,8 @@ private:
     scene.objects.push_back(move(aqwall4));
     scene.objects.push_back(move(aqwall5));
     scene.objects.push_back(move(aqwall6));
+    scene.objects.push_back(move(shadow));
+    
   }
 
 public:
@@ -248,7 +242,7 @@ public:
    * Construct custom game window
    */
   SceneWindow() : Window{"gl9_scene", SIZEX, SIZEY} {
-    //hideCursor();
+    hideCursor();
     glfwSetInputMode(window, GLFW_STICKY_KEYS, 1);
 
     // Initialize OpenGL state
@@ -281,11 +275,14 @@ public:
     // Reset
     if (key == GLFW_KEY_R && action == GLFW_PRESS) {
       scene.generateBubbles = false;
+      colorChange = true;
       initScene1();
     }
     // Load scene 2
     if (key == GLFW_KEY_T && action == GLFW_PRESS) {
       scene.generateBubbles = false;
+      colorChange = false;
+      scene.lightColor = glm::vec3{0,0,0};
       initScene2();
       scene.redistributeObjects();
     }
@@ -315,6 +312,10 @@ public:
     // Clear depth and color buffers
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     // Update and render all objects
+
+    if (colorChange)
+      scene.lightColor = glm::vec3{0,0,sin(glfwGetTime())+0.2f};
+
     scene.update(dt);
     scene.render();
   }

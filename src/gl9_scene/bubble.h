@@ -1,11 +1,3 @@
-//
-// Created by adyko on 12/10/2021.
-//
-
-#ifndef PPGSO_BUBBLE_H
-#define PPGSO_BUBBLE_H
-
-
 #include <ppgso/ppgso.h>
 
 #include "object.h"
@@ -45,6 +37,3 @@ public:
     void split(Scene &scene);
     bool collide(Scene &scene);
 };
-
-
-#endif //PPGSO_BUBBLE_H

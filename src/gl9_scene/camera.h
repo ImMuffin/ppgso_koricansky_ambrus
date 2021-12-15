@@ -4,11 +4,6 @@
 #include <glm/glm.hpp>
 #include <ppgso/ppgso.h>
 
-/*!
- * Simple camera object that keeps track of viewMatrix and projectionMatrix
- * the projectionMatrix is by default constructed as perspective projection
- * the viewMatrix is generated from up, position and back vectors on update
- */
 class Camera {
 public:
   glm::vec3 up{0,1,0};

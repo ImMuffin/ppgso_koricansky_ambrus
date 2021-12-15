@@ -1,9 +1,4 @@
-//
-// Created by adyko on 12/2/2021.
-//
 
-#ifndef PPGSO_AQUARIUM_H
-#define PPGSO_AQUARIUM_H
 
 
 #include <ppgso/ppgso.h>
@@ -40,5 +35,3 @@ public:
 
 };
 
-
-#endif //PPGSO_WALL_H

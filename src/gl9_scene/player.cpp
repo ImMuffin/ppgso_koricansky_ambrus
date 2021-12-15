@@ -1,7 +1,7 @@
 #include "player.h"
 #include "scene.h"
 
-
+#include <glm/gtx/euler_angles.hpp>
 #include <shaders/diffuse_vert_glsl.h>
 #include <shaders/diffuse_frag_glsl.h>
 #include <shaders/convolution_frag_glsl.h>
@@ -153,6 +153,7 @@ bool Player::update(Scene &scene, float dt) {
   {
       cameraFocus = false;
   }
+    
 
   return true;
 }
@@ -179,6 +180,4 @@ void Player::render(Scene &scene) {
   glEnable(GL_CULL_FACE);
 }
 
-void Player::onClick(Scene &scene) {
-  std::cout << "Player has been clicked!" << std::endl;
-}
+

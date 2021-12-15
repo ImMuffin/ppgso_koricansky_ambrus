@@ -1,7 +1,3 @@
-//
-// Created by adyko on 12/10/2021.
-//
-
 #include "bubble.h"
 #include "scene.h"
 

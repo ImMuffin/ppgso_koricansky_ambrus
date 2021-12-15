@@ -1,10 +1,3 @@
-//
-// Created by adyko on 12/2/2021.
-//
-
-#ifndef PPGSO_WALL_H
-#define PPGSO_WALL_H
-
 
 #include <ppgso/ppgso.h>
 
@@ -40,6 +33,3 @@ public:
     void merge(Scene &scene);
     void fluid(Scene &scene);
 };
-
-
-#endif //PPGSO_WALL_H

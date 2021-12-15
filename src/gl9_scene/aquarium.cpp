@@ -1,7 +1,3 @@
-//
-// Created by adyko on 12/2/2021.
-//
-
 #include "aquarium.h"
 #include "scene.h"
 #include "water.h"

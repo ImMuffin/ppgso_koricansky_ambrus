@@ -1,10 +1,3 @@
-//
-// Created by adyko on 11/18/2021.
-//
-
-#ifndef PPGSO_CHEST_H
-#define PPGSO_CHEST_H
-
 #include <ppgso/ppgso.h>
 
 #include "object.h"
@@ -35,6 +28,3 @@ public:
      */
     void render(Scene &scene) override;
 };
-
-
-#endif //PPGSO_CHEST_H
