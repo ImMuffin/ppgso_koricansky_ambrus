@@ -48,6 +48,7 @@ void Water::render(Scene &scene) {
 
     // Set up light
     shader->setUniform("LightDirection", scene.lightDirection);
+    shader->setUniform("LightColor", scene.lightColor);
 
     // use camera
     shader->setUniform("ProjectionMatrix", scene.camera->projectionMatrix);

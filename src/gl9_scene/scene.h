@@ -49,6 +49,7 @@ class Scene {
 
     // Lights, in this case using only simple directional diffuse lighting
     glm::vec3 lightDirection{0, 1.0f, 0.0f};
+    glm::vec3 lightColor{0, 0, 1};
 
     bool generateBubbles = false;
 

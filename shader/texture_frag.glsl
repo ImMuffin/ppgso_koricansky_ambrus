@@ -5,6 +5,9 @@ uniform sampler2D Texture;
 // (optional) Transparency
 uniform float Transparency = 1;
 
+// (optional) LightColor
+uniform vec3 LightColor;
+
 // (optional) Texture offset
 uniform vec2 TextureOffset;
 
@@ -20,6 +23,9 @@ void main() {
   FragmentColor = texture(Texture, vec2(texCoord.x, 1.0 - texCoord.y) + TextureOffset);
   FragmentColor.r *= 0;
   FragmentColor.g *= 0;
-  FragmentColor.b *= 1;
+  FragmentColor.b *= 0;
+  FragmentColor.r += LightColor[0];
+  FragmentColor.g += LightColor[1];
+  FragmentColor.b += LightColor[2];
   FragmentColor.a = Transparency;
 }
