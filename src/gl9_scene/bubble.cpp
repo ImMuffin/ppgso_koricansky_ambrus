@@ -15,22 +15,19 @@ std::unique_ptr<ppgso::Texture> Bubble::texture;
 std::unique_ptr<ppgso::Shader> Bubble::shader;
 
 Bubble::Bubble() {
-    //Scale the default model
-    scale *= 3.0f;
-
     // Initialize static resources if needed
     if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
-    if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("water.bmp"));
+    if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("aquarium.bmp"));
     if (!mesh) mesh = std::make_unique<ppgso::Mesh>("ball.obj");
 }
 
 bool Bubble::update(Scene &scene, float dt) {
 
 
-    position.y += velocity;
+    position.y += velocity * dt;
 
-    if (position.y > 3){
-        position.y = 3;
+    if (position.y > 5){
+        position.y = 5;
     }
 
     collide(scene);

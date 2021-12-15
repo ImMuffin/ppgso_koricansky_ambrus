@@ -41,9 +41,13 @@ bool Player::update(Scene &scene, float dt) {
     rotation.z -= ppgso::PI/2.0f * dt;
   }
   
+  speed.x = -(fabs(forward.x) * dt); 
+  speed.y = -(fabs(forward.y) * dt); 
+  speed.z = -(fabs(forward.z) * dt); 
+
   if(scene.keyboard[GLFW_KEY_UP])
   {
-    position -= forward * dt;
+    position -= forward * dt;;
   } else if(scene.keyboard[GLFW_KEY_DOWN])
   {
     position += forward * dt;

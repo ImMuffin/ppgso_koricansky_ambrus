@@ -2,8 +2,8 @@
 #include "scene.h"
 
 
-#include <shaders/diffuse_vert_glsl.h>
-#include <shaders/diffuse_frag_glsl.h>
+#include <shaders/water_vert_glsl.h>
+#include <shaders/water_frag_glsl.h>
 #include <iostream>
 #include <fstream>
 
@@ -16,7 +16,7 @@ std::unique_ptr<ppgso::Shader> Sand::shader;
 
 Sand::Sand() {
   // Initialize static resources if needed
-  if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
+  if (!shader) shader = std::make_unique<ppgso::Shader>(water_vert_glsl, water_frag_glsl);
   if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("sand.bmp"));
   if (!mesh) mesh = std::make_unique<ppgso::Mesh>("sand.obj");
 
@@ -39,6 +39,8 @@ void Sand::render(Scene &scene) {
 
   // render mesh
   shader->setUniform("ModelMatrix", modelMatrix);
+  shader->setUniform("Transparency",1);
+  shader->setUniform("TimeOffset", (glfwGetTime() * 2*3.14159 * .75)); //vodna animacia
   shader->setUniform("Texture", *texture);
   mesh->render();
 }

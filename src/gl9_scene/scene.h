@@ -21,12 +21,14 @@ class Scene {
      * Update all objects in the scene
      * @param time
      */
-    void update(float time);
+    void update(float time, bool kill);
 
     /*!
      * Render all objects in the scene
      */
     void render();
+
+    void redistributeObjects();
 
     /*!
      * Pick objects using a ray

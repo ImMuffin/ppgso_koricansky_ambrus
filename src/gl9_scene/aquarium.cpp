@@ -42,7 +42,7 @@ void Aquarium::render(Scene &scene) {
     shader->setUniform("Texture", *texture);
 
     // set transparency
-    shader->setUniform("Transparency", 0.3f);
+    shader->setUniform("Transparency", 0.8f);
     mesh->render();
 }
 

@@ -72,6 +72,10 @@ public:
 
   glm::vec3 size{0,0,0};
   bool canCollide = false;
+  glm::vec3 speed = {0,0,0};
+  glm::vec3 normal{0,0,0};
+
+  bool redist = false;
 
 protected:
   /*!

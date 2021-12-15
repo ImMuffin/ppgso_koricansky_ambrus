@@ -28,18 +28,11 @@ Water::Water() {
 
 bool Water::update(Scene &scene, float dt) {
 
-
-    for(int i = 0; i < 10; i++){
-        position.y -= 0.05f;
-
-        if (position.y < 0){
-            position.y = 0;
-        }
-
-        newCollide(scene);
-        collide(scene);
-
-    }
+    speed.x = -(3 * dt);
+    speed.y = -(3 * dt);
+    speed.z = -(3 * dt);
+    position.y += speed.y;
+    collide(scene);
 
 
     generateModelMatrix();
