@@ -221,6 +221,7 @@ private:
     aqwall6->position.y = 6;
 
     auto shadow = std::make_unique<Wall>();
+    shadow->slave = true;
 
     scene.objects.push_back(move(player));
     scene.objects.push_back(move(fish));
@@ -313,8 +314,11 @@ public:
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     // Update and render all objects
 
-    if (colorChange)
+    if (colorChange){
       scene.lightColor = glm::vec3{0,0,sin(glfwGetTime())+0.2f};
+      scene.lightDirection = glm::vec3{0,1,sin(glfwGetTime())+0.2f};
+    }
+      
 
     scene.update(dt);
     scene.render();
