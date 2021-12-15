@@ -28,13 +28,13 @@ Water::Water() {
 
 bool Water::update(Scene &scene, float dt) {
 
-    speed.x = -(fallSpeed * 1.1 * dt);
-    speed.y = -(fallSpeed * 1.5 * dt);
-    speed.z = -(fallSpeed * 1.1 * dt);
+    //speed.x = -(fallSpeed * 1.1 * dt);
+    //speed.y = -(fallSpeed * 1.5 * dt);
+    //speed.z = -(fallSpeed * 1.1 * dt);
 
-    //speed.x = -(10 * dt);
-    //speed.y = -(10 * dt);
-    //speed.z = -(10 * dt);
+    speed.x = -(10 * dt);
+    speed.y = -(10 * dt);
+    speed.z = -(10 * dt);
     position.y += -(fallSpeed * dt);
     collide(scene);
 

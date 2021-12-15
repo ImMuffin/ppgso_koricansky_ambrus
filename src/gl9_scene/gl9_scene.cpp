@@ -101,7 +101,7 @@ private:
         //water->size = {5.4,5.4,5.4};
         water->size = {0.54f,0.54f,0.54f};
         water->scale *= 0.6;
-        water->fallSpeed = 10;
+        water->fallSpeed = 25;
         scene.objects.push_back(move(water));
     }
 

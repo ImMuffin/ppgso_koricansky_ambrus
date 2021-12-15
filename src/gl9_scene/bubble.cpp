@@ -30,9 +30,13 @@ bool Bubble::update(Scene &scene, float dt) {
     //position.x += sin((fmod(glfwGetTime(),ppgso::PI * 2) + rand()/RAND_MAX) * 5) * dt * position.y;
     //position.z += cos((fmod(glfwGetTime(),ppgso::PI * 2) + rand()/RAND_MAX) * 5) * dt * position.y;
     //
-    position.x += sin(fmod(glfwGetTime() * 5,ppgso::PI * 2)) * dt * 0.1f;
-    position.z += sin(fmod(glfwGetTime() * 5,ppgso::PI * 2)) * dt * 0.1f;
+    position.x += sin(fmod(glfwGetTime() * 5,ppgso::PI * 2)) * dt * 0.1f * velocity;
+    position.z += sin(fmod(glfwGetTime() * 5,ppgso::PI * 2)) * dt * 0.1f * velocity;
 
+    if (scale.x >= 0.1f)
+    {
+        return false;
+    }
     collide(scene);
 
     generateModelMatrix();
