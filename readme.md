@@ -72,6 +72,17 @@ I: Odpojiť kameru
 
 ![diagram tried](./readme%20images/objekty.jpg)
 
+### Hlavné postrehy k diagramu
+Všetky objekty dediace od Object obsahujú metódy update a render, ktoré slúžia na vytvorenie modelMatrix objektu a posunutie tejto matice do shaderu. 
+
+Objekt object obsahuje metódy recordMovement a playbackMovement, slúžiace na nahratie pozície rybičky v čase a následné prehratie pohybu za použitia interpolácie. 
+
+Metóda Bubble.colide() slúži na spájanie guličiek pri ich kolízii -> veľké guličky praskajú a zanikajú. 
+
+Metóda Scene.redistributeObjects() slúži na vygenerovanie náhodných pozícií rastlín tak, aby sa neprekrývali s inými objektami scény. 
+
+Hlavná inicializácia scény prebieha v gl9_scene.cpp ktorú diagram neobsahuje, pretože ju žiadny objekt nededí. Taktiež je v danej časti kódu nastavené ovládanie scény a prechod medzi scénami.
+
 ### Popis hierarchického pohybu
 Poloha objektov nachádzajúcich sa v akváriu as odvíja od štartovacieho bloku akvária (spodku akvária). Túto hierarchiu sme dosiali násobením matíc `modelMatrix`.
 
