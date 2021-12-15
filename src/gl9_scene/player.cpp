@@ -77,9 +77,21 @@ bool Player::update(Scene &scene, float dt) {
       }
   }
 
-  if (scene.keyboard[GLFW_KEY_M] && playback == false)
+  if ((scene.keyboard[GLFW_KEY_M]) && (playback == false))
   {
       if (!p.is_open()) p.open("../data/matrix.txt");
+      keyframeTime = (((int) glfwGetTime()) * 2) + (( (int) (glfwGetTime() * 10)) % 10) / 5;
+      playbackMovement(p);
+      firstModel = modelMatrix;
+      playbackMovement(p);
+      secondModel = modelMatrix;
+      modelMatrix = firstModel;
+      playback = true;
+  }
+
+  if ((playback == false) && (playable == false))
+  {
+    if (!p.is_open()) p.open("../data/friend.txt");
       keyframeTime = (((int) glfwGetTime()) * 2) + (( (int) (glfwGetTime() * 10)) % 10) / 5;
       playbackMovement(p);
       firstModel = modelMatrix;
@@ -120,6 +132,27 @@ bool Player::update(Scene &scene, float dt) {
       }
   }
 
+  if ((playback == false) && (playable == false))
+  {
+    if (!p.is_open()) p.open("../data/friend.txt");
+      keyframeTime = (((int) glfwGetTime()) * 2) + (( (int) (glfwGetTime() * 10)) % 10) / 5;
+      playbackMovement(p);
+      firstModel = modelMatrix;
+      playbackMovement(p);
+      secondModel = modelMatrix;
+      modelMatrix = firstModel;
+      playback = true;
+  }
+
+  if (scene.keyboard[GLFW_KEY_U])
+  {
+      cameraFocus = true;
+  }
+
+  if (scene.keyboard[GLFW_KEY_J])
+  {
+      cameraFocus = false;
+  }
 
   return true;
 }

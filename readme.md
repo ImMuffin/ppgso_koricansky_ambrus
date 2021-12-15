@@ -11,6 +11,19 @@ Téma: Akvárium
 
 ## Implementacia
 
+Ovladanie:
+B: Nahravanie pohybu
+N: Zastavenie nahravania
+M: Prehravanie
+
+R: Prva scena
+T: Druha scena
+Y: Bublinky
+H: Bez bubliniek
+
+U: Napojit kameru
+I: Odpojit kameru
+
 Co je dopredu?
 ``` c++
 forward.x = sin(rotation.z)*sin(rotation.x);
@@ -51,4 +64,6 @@ Priesvitnost a rozmazanost vo vode
 shader->setUniform("Transparency",1.0f);
 shader->setUniform("TimeOffset", (glfwGetTime() * 2*3.14159 * .75));
 ```
+
+
 

@@ -1,7 +1,11 @@
 #include "scene.h"
 #include "water.h"
+#include "bubble.h"
 
-void Scene::update(float time, bool kill) {
+void Scene::update(float time) {
+  //camera movement
+  camera->position = {sin(fmod(glfwGetTime(), ppgso::PI * 2)) * 10,(sin(fmod(glfwGetTime(), ppgso::PI * 4) / 4) * 10),(cos(fmod(glfwGetTime(), ppgso::PI * 2)) * 10)};
+  //camera->position = {sin(fmod(glfwGetTime(), ppgso::PI * 2)) * 10,8.0f,(cos(fmod(glfwGetTime(), ppgso::PI * 2)) * 10)};
   camera->update();
 
   // Use iterator to update all objects so we can remove while iterating
@@ -10,7 +14,7 @@ void Scene::update(float time, bool kill) {
   while (i != std::end(objects)) {
     // Update and remove from list if needed
     auto obj = i->get();
-    if ((!obj->update(*this, time)) || (kill == true))
+    if (!obj->update(*this, time))
       i = objects.erase(i); // NOTE: no need to call destructors as we store shared pointers in the scene
     else
       ++i;
@@ -30,7 +34,7 @@ void Scene::update(float time, bool kill) {
     if (obj->cameraFocus == true) //check if the camera should follow the object
     {
       camera->back = obj->position;
-      camera->position = obj->position + obj->forward * 0.6f;
+      camera->position = obj->position + obj->forward * 2.0f;
       if (fmod(obj->rotation.x, ppgso::PI*2) - ppgso::PI < 0)
       {
         camera->up.y = 1;
@@ -40,6 +44,10 @@ void Scene::update(float time, bool kill) {
         camera->up.y = -1;
       }
       camera->update();
+    }
+    else
+    {
+      camera->back = {0,0,0};;
     }
 
     if(obj->canCollide)
@@ -66,6 +74,7 @@ void Scene::update(float time, bool kill) {
           }
           if (collisionCounter == 3)
           {
+            obj->fallSpeed *= 1; //1 pre aktivnejsiu sim, 0.2 pre splash
             if (oObj->normal.x != 0)
             {
               obj->position.x -= obj->speed.x * oObj->normal.x;
@@ -82,6 +91,23 @@ void Scene::update(float time, bool kill) {
         }
         otherObjects++;
       }
+    }
+  }
+
+  //generate bubbles
+  if (generateBubbles)
+  {
+    if (fmod(glfwGetTime(), 100) <= 10)
+    {
+      auto bubble = std::make_unique<Bubble>();
+      bubble->velocity = (float)rand()/(float)(RAND_MAX/0.3-0.02) + 0.02;
+      bubble->position.y = (float)rand()/(float)RAND_MAX;
+      bubble->position.x = (float)rand()/(float)RAND_MAX + .5f;
+      bubble->position.z = (float)rand()/(float)RAND_MAX;
+      bubble->scale *= 0.04f;
+      bubble->slave = true;
+      bubble->canCollide = true;
+      objects.push_back(move(bubble));
     }
   }
 }
@@ -106,17 +132,15 @@ void Scene::redistributeObjects()
         distribute = false;
         obj->position.x = fmod(rand(), 4.2) - 2.1;
         obj->position.z = fmod(rand(), 8.4) - 4.2;
+        printf("%f, %f\n",obj->position.x, obj->position.y);
         auto otherObjects = std::begin(objects);
         while (otherObjects != std::end(objects))
         {
           auto oObj = otherObjects->get();
-          if (fabs(obj->position.x - oObj->position.x) < (obj->size.x + oObj->size.x))
+          if ((fabs(obj->position.x - oObj->position.x) < (obj->size.x + oObj->size.x)) && (fabs(obj->position.y - oObj->position.y) < (obj->size.y + oObj->size.y)) && (fabs(obj->position.z - oObj->position.z) < (obj->size.z + oObj->size.z)) && oObj != obj)
           {
             distribute = true;
-          }
-          if (fabs(obj->position.z - oObj->position.z) < (obj->size.z + oObj->size.z))
-          {
-            distribute = true;
+            break;
           }
           otherObjects++;
         }

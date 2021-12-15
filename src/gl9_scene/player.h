@@ -42,5 +42,7 @@ public:
    * @param scene
    */
   void onClick(Scene &scene) override ;
+
+  bool playable = false;
 };
 

@@ -15,4 +15,5 @@ public:
   Plant();
   bool update(Scene &scene, float dt) override;
   void render(Scene &scene) override;
+  bool plant2 = false;
 };

@@ -3,7 +3,7 @@
 uniform sampler2D Texture;
 
 // (optional) Transparency
-uniform float Transparency;
+uniform float Transparency = 1;
 
 // (optional) Texture offset
 uniform vec2 TextureOffset;
@@ -18,5 +18,8 @@ void main() {
   // Lookup the color in Texture on coordinates given by texCoord
   // NOTE: Texture coordinate is inverted vertically for compatibility with OBJ
   FragmentColor = texture(Texture, vec2(texCoord.x, 1.0 - texCoord.y) + TextureOffset);
+  FragmentColor.r *= 0;
+  FragmentColor.g *= 0;
+  FragmentColor.b *= 1;
   FragmentColor.a = Transparency;
 }

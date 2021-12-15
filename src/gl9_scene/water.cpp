@@ -11,27 +11,31 @@
 #include <shaders/diffuse_vert_glsl.h>
 #include <shaders/diffuse_frag_glsl.h>
 
+#include <shaders/texture_vert_glsl.h>
+#include <shaders/texture_frag_glsl.h>
+
 // shared resources
 std::unique_ptr<ppgso::Mesh> Water::mesh;
 std::unique_ptr<ppgso::Texture> Water::texture;
 std::unique_ptr<ppgso::Shader> Water::shader;
 
 Water::Water() {
-    //Scale the default model
-    scale *= 3.0f;
-
     // Initialize static resources if needed
-    if (!shader) shader = std::make_unique<ppgso::Shader>(diffuse_vert_glsl, diffuse_frag_glsl);
-    if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("water.bmp"));
+    if (!shader) shader = std::make_unique<ppgso::Shader>(texture_vert_glsl, texture_frag_glsl);
+    if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("aquarium.bmp"));
     if (!mesh) mesh = std::make_unique<ppgso::Mesh>("ball.obj");
 }
 
 bool Water::update(Scene &scene, float dt) {
 
-    speed.x = -(3 * dt);
-    speed.y = -(3 * dt);
-    speed.z = -(3 * dt);
-    position.y += speed.y;
+    speed.x = -(fallSpeed * 1.1 * dt);
+    speed.y = -(fallSpeed * 1.5 * dt);
+    speed.z = -(fallSpeed * 1.1 * dt);
+
+    //speed.x = -(10 * dt);
+    //speed.y = -(10 * dt);
+    //speed.z = -(10 * dt);
+    position.y += -(fallSpeed * dt);
     collide(scene);
 
 

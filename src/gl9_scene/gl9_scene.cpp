@@ -69,7 +69,7 @@ private:
     aqwall5->normal={0,0,-1};
 
     aqwall1->position.y = 0;
-    aqwall1->position.z = -5;
+    //aqwall1->position.z = -5;
     //aqwall1->rotation.x = -ppgso::PI / 2;
 
     aqwall2->position.x = 6.17f / 2;
@@ -91,7 +91,7 @@ private:
     aqwall5->position.y = 3.11f;
 
 
-    for (int i = 0; i < 100; i++){
+    for (int i = 0; i < 250; i++){
         auto water = std::make_unique<Water>();
         water->slave = true;
         water->canCollide = true;
@@ -100,7 +100,8 @@ private:
         water->position.z = (float)rand()/(float)RAND_MAX;
         //water->size = {5.4,5.4,5.4};
         water->size = {0.54f,0.54f,0.54f};
-        water->scale *= 0.2;
+        water->scale *= 0.6;
+        water->fallSpeed = 10;
         scene.objects.push_back(move(water));
     }
 
@@ -126,8 +127,17 @@ private:
     player->rotation.x = ppgso::PI/2.0f;
     player->rotation.y = ppgso::PI/2.0f;
     player->cameraFocus = true;
-    player->slave = true;
     player->canCollide = true;
+    player->playable = true;
+
+    auto fish = std::make_unique<Player>();
+    fish->position.y = 5;
+    fish->position.z = 3;
+    fish->rotation.x = ppgso::PI/2.0f;
+    fish->rotation.y = ppgso::PI/2.0f;
+    fish->slave = true;
+    fish->playable = false;
+
 
     // Add chest
     auto chest = std::make_unique<Chest>();
@@ -137,7 +147,8 @@ private:
     chest->position.y = .7f;
     chest->scale *= 0.05f;
     chest->slave = true;
-    chest->size = {2,2,2};
+    chest->size = {0.9f,1.3f,1.5f};
+    chest->normal = {1,1,1};
 
     // add castle
     auto castle = std::make_unique<Castle>();
@@ -146,21 +157,21 @@ private:
     castle->position.z = -4.2;
     castle->position.x = -2.1;
     castle->slave = true;
-    castle->size = {2,2,2};
+    castle->size = {1,2,1};
+    castle->normal = {1,1,1};
 
     // add plant
-    for(int i = 0; i < 5; i++)
+    for(int i = 0; i < 50; i++)
     {
       auto plant = std::make_unique<Plant>();
       plant->scale *= 10.0f;
       plant->position.y = 0.2f;
       plant->slave = true;
       plant->redist = true;
-      plant->size = {1,1,1};
+      plant->size = {.3f,.0f,.3f};
       scene.objects.push_back(move(plant));
     }
     
-
     // add sand
     auto sand = std::make_unique<Sand>();
     sand->slave = true;
@@ -173,12 +184,14 @@ private:
     auto aqwall3 = std::make_unique<Aquarium>(); //left wall
     auto aqwall4 = std::make_unique<Aquarium>(); //back wall
     auto aqwall5 = std::make_unique<Aquarium>(); //front wall
+    auto aqwall6 = std::make_unique<Aquarium>(); //top
 
     aqwall1->master = true;
     aqwall2->slave = true;
     aqwall3->slave = true;
     aqwall4->slave = true;
     aqwall5->slave = true;
+    aqwall6->slave = true;
 
     aqwall1->size={3.0f, 0.2f, 10.0f};
     aqwall1->normal={0,1,0};
@@ -190,6 +203,8 @@ private:
     aqwall4->normal={0,0,1};
     aqwall5->size={3.0f, 3.0f, 0.2f};
     aqwall5->normal={0,0,-1};
+    aqwall6->size={3.0f, 0.2f, 10.0f};
+    aqwall6->normal={0,-1,0};
 
     //aqwall1->position.y = 5;
     //aqwall1->position.z = -5;
@@ -213,17 +228,10 @@ private:
     aqwall5->rotation.x = ppgso::PI/2;
     aqwall5->position.y = 3.11f;
 
-    for (int i = 0; i < 0; i++){
-        auto bubble = std::make_unique<Bubble>();
-        bubble->velocity = (float)rand()/(float)(RAND_MAX/0.3-0.02) + 0.02;
-        bubble->position.y = (float)rand()/(float)RAND_MAX;
-        bubble->position.x = (float)rand()/(float)RAND_MAX;
-        bubble->position.z = (float)rand()/(float)RAND_MAX;
-        bubble->scale *= 0.01f;
-        scene.objects.push_back(move(bubble));
-    }
+    aqwall6->position.y = 6;
 
     scene.objects.push_back(move(player));
+    scene.objects.push_back(move(fish));
     scene.objects.push_back(move(chest));
     scene.objects.push_back(move(sand));
     scene.objects.push_back(move(castle));
@@ -232,6 +240,7 @@ private:
     scene.objects.push_back(move(aqwall3));
     scene.objects.push_back(move(aqwall4));
     scene.objects.push_back(move(aqwall5));
+    scene.objects.push_back(move(aqwall6));
   }
 
 public:
@@ -271,33 +280,24 @@ public:
 
     // Reset
     if (key == GLFW_KEY_R && action == GLFW_PRESS) {
-      scene.update(0, true);
+      scene.generateBubbles = false;
       initScene1();
     }
     // Load scene 2
     if (key == GLFW_KEY_T && action == GLFW_PRESS) {
-      scene.update(0,true);
+      scene.generateBubbles = false;
       initScene2();
-      //scene.redistributeObjects();
+      scene.redistributeObjects();
+    }
+    if (key == GLFW_KEY_Y && action == GLFW_PRESS) {
+      scene.generateBubbles = true;
+    }
+    if (key == GLFW_KEY_H && action == GLFW_PRESS)
+    {
+      scene.generateBubbles = false;
     }
   }
 
-  /*!
-   * Handle cursor position changes
-   * @param cursorX Mouse horizontal position in window coordinates
-   * @param cursorY Mouse vertical position in window coordinates
-   */
-  void onCursorPos(double cursorX, double cursorY) override {
-    scene.cursor.x = cursorX;
-    scene.cursor.y = cursorY;
-  }
-
-  /*!
-   * Handle cursor buttons
-   * @param button Mouse button being manipulated
-   * @param action Mouse bu
-   * @param mods
-   */
   /*!
    * Window update implementation that will be called automatically from pollEvents
    */
@@ -311,11 +311,11 @@ public:
     time = (float) glfwGetTime();
 
     // Set gray background
-    glClearColor(.0f, .0f, .4f, 0);
+    glClearColor(.2f, .2f, .4f, 0);
     // Clear depth and color buffers
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     // Update and render all objects
-    scene.update(dt,false);
+    scene.update(dt);
     scene.render();
   }
 };

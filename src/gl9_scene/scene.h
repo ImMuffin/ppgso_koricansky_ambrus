@@ -21,7 +21,7 @@ class Scene {
      * Update all objects in the scene
      * @param time
      */
-    void update(float time, bool kill);
+    void update(float time);
 
     /*!
      * Render all objects in the scene
@@ -49,6 +49,8 @@ class Scene {
 
     // Lights, in this case using only simple directional diffuse lighting
     glm::vec3 lightDirection{0, 1.0f, 0.0f};
+
+    bool generateBubbles = false;
 
     // Store cursor state
     struct {

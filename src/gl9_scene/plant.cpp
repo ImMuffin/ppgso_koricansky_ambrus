@@ -18,13 +18,20 @@ Plant::Plant() {
 
   // Initialize static resources if needed
   if (!shader) shader = std::make_unique<ppgso::Shader>(water_vert_glsl, water_frag_glsl);
-  if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("plant1.bmp"));
+  if (!texture) texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("green.bmp"));
   if (!mesh) mesh = std::make_unique<ppgso::Mesh>("plant1.obj");
 
 }
 
 
 bool Plant::update(Scene &scene, float dt) {
+  if (plant2)
+  {
+  shader = std::make_unique<ppgso::Shader>(water_vert_glsl, water_frag_glsl);
+  texture = std::make_unique<ppgso::Texture>(ppgso::image::loadBMP("green.bmp"));
+  mesh = std::make_unique<ppgso::Mesh>("plant2.obj");
+  this->scale = {.2,.2,.2};
+  }
   generateModelMatrix();
   return true;
 }

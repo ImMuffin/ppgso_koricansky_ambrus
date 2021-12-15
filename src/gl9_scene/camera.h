@@ -12,8 +12,8 @@
 class Camera {
 public:
   glm::vec3 up{0,1,0};
-  glm::vec3 position{-12,12,0};
-  glm::vec3 back{0,0,0};
+  glm::vec3 position{8,8,-4.2f};
+  glm::vec3 back{0,0,-4.2f};
 
   glm::mat4 viewMatrix;
   glm::mat4 projectionMatrix;
