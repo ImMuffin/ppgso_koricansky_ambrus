@@ -110,7 +110,7 @@ forward.y = cos(rotation.x);
 forward.z = sin(rotation.x)*cos(rotation.z);
 ```
 
-Pretocenie kamery cez 180°.
+Pretočenie kamery cez 180°.
 ``` c++
 if (fmod(obj->rotation.x, ppgso::PI*2) - ppgso::PI < 0)
 {
