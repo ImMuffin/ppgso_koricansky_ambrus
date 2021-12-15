@@ -15,6 +15,8 @@
  */
 class Scene {
   public:
+
+    Object* masterObject = nullptr;
     /*!
      * Update all objects in the scene
      * @param time
@@ -44,7 +46,7 @@ class Scene {
     std::map< int, int > keyboard;
 
     // Lights, in this case using only simple directional diffuse lighting
-    glm::vec3 lightDirection{0, 1.0f, 1.0f};
+    glm::vec3 lightDirection{0, 1.0f, 0.0f};
 
     // Store cursor state
     struct {

@@ -38,12 +38,83 @@ private:
    * Reset and initialize the game scene
    * Creating unique smart pointers to objects that are stored in the scene object list
    */
-  void initScene() {
+  void initScene1()
+  {
+    scene.objects.clear();
+
+    auto camera = std::make_unique<Camera>(60.0f, (float)SIZEX/(float)SIZEY, 0.1f, 100.0f);
+    scene.camera = move(camera);
+
+    auto aqwall1 = std::make_unique<Aquarium>();
+    auto aqwall2 = std::make_unique<Aquarium>();
+    auto aqwall3 = std::make_unique<Aquarium>();
+    auto aqwall4 = std::make_unique<Aquarium>();
+    auto aqwall5 = std::make_unique<Aquarium>();
+
+    aqwall1->master = true;
+    aqwall2->slave = true;
+    aqwall3->slave = true;
+    aqwall4->slave = true;
+    aqwall5->slave = true;
+
+    aqwall1->size={6.17f, 0.1f, 11};
+
+    aqwall1->position.y = 0;
+    aqwall1->position.z = -5;
+    //aqwall1->rotation.x = -ppgso::PI / 2;
+
+    aqwall2->position.x = 6.17f / 2;
+    aqwall2->rotation.y = ppgso::PI/2;
+    aqwall2->position.y = 6.17f / 2;
+
+    aqwall3->position.x = -6.17f / 2;
+    aqwall3->rotation.y = ppgso::PI/2;
+    aqwall3->position.y = 6.17f / 2;
+
+    aqwall4->position.z = -5.5f;
+    aqwall4->scale.z = 0.55;
+    aqwall4->rotation.x = ppgso::PI/2;
+    aqwall4->position.y = 3.11f;
+
+    aqwall5->position.z = 5.5f;
+    aqwall5->scale.z = 0.55;
+    aqwall5->rotation.x = ppgso::PI/2;
+    aqwall5->position.y = 3.11f;
+
+
+    for (int i = 0; i < 100; i++){
+        auto water = std::make_unique<Water>();
+        water->slave = true;
+        water->canCollide = true;
+        water->position.y = i * 2;
+        water->position.x = (float)rand()/(float)RAND_MAX;
+        water->position.z = (float)rand()/(float)RAND_MAX;
+        water->size = {5.4,5.4,5.4};
+        water->scale *= 0.2;
+        scene.objects.push_back(move(water));
+    }
+
+    scene.objects.push_back(move(aqwall1));
+    scene.objects.push_back(move(aqwall2));
+    scene.objects.push_back(move(aqwall3));
+    scene.objects.push_back(move(aqwall4));
+    scene.objects.push_back(move(aqwall5));
+  }
+
+  void initScene2() {
     scene.objects.clear();
 
     // Create a camera
     auto camera = std::make_unique<Camera>(60.0f, (float)SIZEX/(float)SIZEY, 0.1f, 100.0f);
     scene.camera = move(camera);
+
+    // Add player to the scene
+    auto player = std::make_unique<Player>();
+    player->position.y = 3;
+    player->rotation.x = ppgso::PI/2.0f;
+    player->rotation.y = ppgso::PI/2.0f;
+    player->cameraFocus = true;
+    scene.objects.push_back(move(player));
 
     // Add chest
     /*auto chest = std::make_unique<Chest>();
@@ -53,17 +124,8 @@ private:
     chest->scale *= 0.04f;
     scene.objects.push_back(move(chest));*/
 
-<<<<<<< HEAD
     // add aquarium 
     auto aquarium = std::make_unique<Aquarium>();
-    scene.objects.push_back(move(aquarium));
-=======
->>>>>>> e4fca13eb864b5981bf231d04503f341dfd623af
-
-    auto aquarium = std::make_unique<Aquarium>();
-    aquarium->scale = glm::vec3{0.1,0.1,0.1};
-    aquarium->rotation.x = 3;
-
     scene.objects.push_back(move(aquarium));
 
 
@@ -84,24 +146,6 @@ private:
     auto sand = std::make_unique<Sand>();
     sand->rotation.z = -ppgso::PI/2.0f;
     scene.objects.push_back(move(sand));
-    
-
-    // Add player to the scene
-    auto player = std::make_unique<Player>();
-    player->position.y = 3;
-    player->rotation.x = ppgso::PI/2.0f;
-    player->rotation.y = ppgso::PI/2.0f;
-    player->cameraFocus = true;
-    scene.objects.push_back(move(player));
-
-    for (int i = 0; i < 200; i++){
-        auto water = std::make_unique<Water>();
-        water->position.y = i * 2;
-        water->position.x = (float)rand()/(float)RAND_MAX;
-        water->position.z = (float)rand()/(float)RAND_MAX;
-        water->scale *= 0.05f;
-        scene.objects.push_back(move(water));
-    }
 
     for (int i = 0; i < 100; i++){
         auto bubble = std::make_unique<Bubble>();
@@ -137,7 +181,7 @@ public:
     glEnable(GL_BLEND); //enable for transparency
     glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
 
-    initScene();
+    initScene1();
   }
 
   /*!
@@ -152,12 +196,11 @@ public:
 
     // Reset
     if (key == GLFW_KEY_R && action == GLFW_PRESS) {
-      initScene();
+      initScene1();
     }
-
-    // Pause
-    if (key == GLFW_KEY_P && action == GLFW_PRESS) {
-      animate = !animate;
+    // Load scene 2
+    if (key == GLFW_KEY_T && action == GLFW_PRESS) {
+      initScene2();
     }
   }
 
@@ -177,35 +220,6 @@ public:
    * @param action Mouse bu
    * @param mods
    */
-  void onMouseButton(int button, int action, int mods) override {
-    if(button == GLFW_MOUSE_BUTTON_LEFT) {
-      scene.cursor.left = action == GLFW_PRESS;
-
-      if (scene.cursor.left) {
-        // Convert pixel coordinates to Screen coordinates
-        double u = (scene.cursor.x / width - 0.5f) * 2.0f;
-        double v = - (scene.cursor.y / height - 0.5f) * 2.0f;
-
-        // Get mouse pick vector in world coordinates
-        auto direction = scene.camera->cast(u, v);
-        auto position = scene.camera->position;
-
-        // Get all objects in scene intersected by ray
-        auto picked = scene.intersect(position, direction);
-
-        // Go through all objects that have been picked
-        for (auto &obj: picked) {
-          // Pass on the click event
-          obj->onClick(scene);
-        }
-      }
-    }
-    if(button == GLFW_MOUSE_BUTTON_RIGHT) {
-
-        scene.cursor.right = action == GLFW_PRESS;
-    }
-  }
-
   /*!
    * Window update implementation that will be called automatically from pollEvents
    */
@@ -219,14 +233,12 @@ public:
     time = (float) glfwGetTime();
 
     // Set gray background
-    glClearColor(.5f, .5f, .5f, 0);
+    glClearColor(.0f, .0f, .4f, 0);
     // Clear depth and color buffers
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     // Update and render all objects
     scene.update(dt);
     scene.render();
-
-
   }
 };
 

@@ -14,7 +14,8 @@ void Scene::update(float time) {
       i = objects.erase(i); // NOTE: no need to call destructors as we store shared pointers in the scene
     else
       ++i;
-    if (obj->cameraFocus == true)
+
+    if (obj->cameraFocus == true) //check if the camera should follow the object
     {
       camera->back = obj->position;
       //camera->position = obj->position + obj->forward * 2.0f;
@@ -27,6 +28,32 @@ void Scene::update(float time) {
         camera->up.y = -1;
       }
       camera->update();
+    }
+
+    if (obj->master) //set object for connected motion
+    {
+      masterObject = obj;
+    }
+
+    if ((masterObject != nullptr) && (obj->slave == true)) //connected motion
+    {
+      glm::mat4 originalModel = obj->modelMatrix;
+      obj->modelMatrix = masterObject->modelMatrix;
+      obj->modelMatrix *= originalModel;
+    }
+
+    if(obj->canCollide)
+    {
+      auto otherObjects = std::begin(objects);
+      while (otherObjects != std::end(objects)) 
+      {
+        auto oObj = otherObjects->get();
+        //compare x
+        float xobj1 = obj->position.x + obj->size.x;
+        float xobj2 = obj->position.x - obj->size.x;;
+        //if (obj->position.x + )
+        otherObjects++;
+      }
     }
   }
 }

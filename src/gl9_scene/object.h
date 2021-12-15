@@ -67,11 +67,16 @@ public:
   bool cameraFocus = false;
   glm::vec3 forward{0,0,0};
 
+  bool master = false;
+  bool slave = false;
+
+  glm::vec3 size{0,0,0};
+  bool canCollide = false;
+
 protected:
   /*!
    * Generate modelMatrix from position, rotation and scale
    */
   void generateModelMatrix();
-
 };
 

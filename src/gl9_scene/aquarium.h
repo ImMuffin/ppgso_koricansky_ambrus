@@ -23,7 +23,7 @@ public:
      * Create a new player
      */
     Aquarium();
-
+    
     /*!
      * Update player position considering keyboard inputs
      * @param scene Scene to update

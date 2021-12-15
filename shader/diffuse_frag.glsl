@@ -6,7 +6,7 @@ uniform sampler2D Texture;
 uniform vec3 LightDirection;
 
 // (optional) Transparency
-uniform float Transparency;
+uniform float Transparency = 1;
 
 // (optional) Texture offset
 uniform vec2 TextureOffset;
