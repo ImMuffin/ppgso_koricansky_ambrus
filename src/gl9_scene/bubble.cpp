@@ -93,7 +93,6 @@ bool Bubble::collide(Scene &scene) {
             float finalScale = (volume1 + volume2) / (4/3 * 3.14);
             finalScale = cbrt(finalScale);
             float pos_offset = scale.x / object->scale.x;
-            //object->position = glm::vec3 {(position.x + object->position.x)};
             if (position.y > object->position.y)
             {
                 scale = glm::vec3 {finalScale,finalScale,finalScale};
@@ -102,9 +101,6 @@ bool Bubble::collide(Scene &scene) {
                 object->scale = glm::vec3 {finalScale,finalScale,finalScale};
                 scale = {0,0,0};
             }
-
-
-            //position = {roundf(position.x * 1000) / 1000,roundf(position.y * 1000) / 1000,roundf(position.z * 1000) / 1000};
         }
 
     }
