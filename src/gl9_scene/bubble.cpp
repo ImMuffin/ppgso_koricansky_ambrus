@@ -26,9 +26,13 @@ bool Bubble::update(Scene &scene, float dt) {
     //position.x += sin((fmod(glfwGetTime(),ppgso::PI * 2) + rand()/RAND_MAX) * 5) * dt * position.y;
     //position.z += cos((fmod(glfwGetTime(),ppgso::PI * 2) + rand()/RAND_MAX) * 5) * dt * position.y;
     //
-    position.x += sin(fmod(glfwGetTime() * 5,ppgso::PI * 2)) * dt * 0.1f;
-    position.z += sin(fmod(glfwGetTime() * 5,ppgso::PI * 2)) * dt * 0.1f;
+    position.x += sin(fmod(glfwGetTime() * 5,ppgso::PI * 2)) * dt * 0.1f * velocity;
+    position.z += sin(fmod(glfwGetTime() * 5,ppgso::PI * 2)) * dt * 0.1f * velocity;
 
+    if (scale.x >= 0.1f)
+    {
+        return false;
+    }
     collide(scene);
 
     generateModelMatrix();
@@ -85,7 +89,6 @@ bool Bubble::collide(Scene &scene) {
             float finalScale = (volume1 + volume2) / (4/3 * 3.14);
             finalScale = cbrt(finalScale);
             float pos_offset = scale.x / object->scale.x;
-            //object->position = glm::vec3 {(position.x + object->position.x)};
             if (position.y > object->position.y)
             {
                 scale = glm::vec3 {finalScale,finalScale,finalScale};
@@ -94,9 +97,6 @@ bool Bubble::collide(Scene &scene) {
                 object->scale = glm::vec3 {finalScale,finalScale,finalScale};
                 scale = {0,0,0};
             }
-
-
-            //position = {roundf(position.x * 1000) / 1000,roundf(position.y * 1000) / 1000,roundf(position.z * 1000) / 1000};
         }
 
     }

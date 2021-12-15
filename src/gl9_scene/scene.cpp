@@ -97,18 +97,15 @@ void Scene::update(float time) {
   //generate bubbles
   if (generateBubbles)
   {
-    if (fmod(glfwGetTime(), 100) <= 10)
-    {
-      auto bubble = std::make_unique<Bubble>();
-      bubble->velocity = (float)rand()/(float)(RAND_MAX/0.3-0.02) + 0.02;
-      bubble->position.y = (float)rand()/(float)RAND_MAX;
-      bubble->position.x = (float)rand()/(float)RAND_MAX + .5f;
-      bubble->position.z = (float)rand()/(float)RAND_MAX;
-      bubble->scale *= 0.04f;
-      bubble->slave = true;
-      bubble->canCollide = true;
-      objects.push_back(move(bubble));
-    }
+    auto bubble = std::make_unique<Bubble>();
+    bubble->velocity = (float)rand()/(float)(RAND_MAX/0.3-0.02) + 0.02;
+    bubble->position.y = (float)rand()/(float)RAND_MAX;
+    bubble->position.x = (float)rand()/(float)RAND_MAX + .5f;
+    bubble->position.z = (float)rand()/(float)RAND_MAX;
+    bubble->scale *= 0.04f;
+    bubble->slave = true;
+    bubble->canCollide = true;
+    objects.push_back(move(bubble));
   }
 }
 
