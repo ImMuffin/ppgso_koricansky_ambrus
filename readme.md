@@ -4,6 +4,8 @@ Autori: Adam Koričanský a Ondrej Ambruš
 
 Team: Team 11
 
+Cvičenie: Štvrtok 18:00
+
 Téma: Akvárium
 
 ---
@@ -47,28 +49,33 @@ Rybky spolu plávajú, počas čoho nájdu truhlu z ktorej vychádzajú bublinky
 ## Implementacia
 
 ### Ovládanie:
-B: Nahravanie pohybu
+B: Nahrávanie pohybu
 
-N: Zastavenie nahravania
+N: Zastavenie nahrávania
 
-M: Prehravanie
+M: Prehrávanie
 
-R: Prva scena
+R: Prvá scéna
 
-T: Druha scena
+T: Druhá scéna
 
 Y: Bublinky
 
 H: Bez bubliniek
 
-U: Napojit kameru
+U: Napojiť kameru
 
-I: Odpojit kameru
+I: Odpojiť kameru
+
+
+### Diagram tried
+
+![diagram tried](./readme%20images/objekty.jpg)
 
 ### Popis hierarchického pohybu
 Poloha objektov nachádzajúcich sa v akváriu as odvíja od štartovacieho bloku akvária (spodku akvária). Túto hierarchiu sme dosiali násobením matíc `modelMatrix`.
 
-![Img1.5](./readme%20images/hierarchickypohyb.jpg)
+![hierarchia](./readme%20images/hierarchickypohyb.jpg)
 ``` c++
 if (obj->master) //set object for connected motion
 {
@@ -94,7 +101,9 @@ if (obj->cameraFocus == true)
 ```
 
 ---
-Co je dopredu?
+
+### Zaujímavý kód
+Kód na určovanie smeru ryby pre natočenie sledovacej kamery
 ``` c++
 forward.x = sin(rotation.z)*sin(rotation.x);
 forward.y = cos(rotation.x);
@@ -114,19 +123,19 @@ else
 camera->update();
 ```
 
-Vodny shader
+Vlastný vodný shader.
 ``` c++
 vec2 texcoord = texCoord;
 texcoord.x += sin(texcoord.y * 4*2*3.14159 + TimeOffset) / 100;
 ```
 
-Priesvitnost a rozmazanost vo vode
+Priesvitnosť a animovanie vodného shaderu.
 ``` c++
 shader->setUniform("Transparency",1.0f);
 shader->setUniform("TimeOffset", (glfwGetTime() * 2*3.14159 * .75));
 ```
 
-Bublinky sa spoja ked sa zrazia
+Spájanie bubliniek po zrážke.
 ``` C++
 if (col < 0 && dis != 0) {
             auto ratio = -col / dis;
@@ -149,7 +158,7 @@ if (col < 0 && dis != 0) {
 
 ```
 
-Presuvanie objektov na zaklade velkosti bounding boxov
+Presúvanie objektov pri generovaní scény.
 ``` c++
 void Scene::redistributeObjects()
 {
@@ -183,7 +192,7 @@ void Scene::redistributeObjects()
 }
 ```
 
-Kolizie pomocou bounding boxov
+Kolízie pomocou bounding boxov.
 ``` c++
 if(obj->canCollide)
     {
@@ -231,7 +240,7 @@ if(obj->canCollide)
 ```
 
 
-Kolizie vodnych guliciek
+Kolízie guličiek vody.
 ``` c++
 void Water::collide(Scene &scene) {
 
