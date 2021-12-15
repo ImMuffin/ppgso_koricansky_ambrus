@@ -11,6 +11,9 @@ uniform float Transparency = 1;
 // (optional) Texture offset
 uniform vec2 TextureOffset;
 
+// (optional) LightColor
+uniform vec3 LightColor;
+
 // The vertex shader will feed this input
 in vec2 texCoord;
 
@@ -28,4 +31,8 @@ void main() {
   // NOTE: Texture coordinate is inverted vertically for compatibility with OBJ
   FragmentColor = texture(Texture, vec2(texCoord.x, 1.0 - texCoord.y) + TextureOffset) * diffuse;
   FragmentColor.a = Transparency;
+  FragmentColor.r += LightColor[0];
+  FragmentColor.g += LightColor[1];
+  FragmentColor.b += LightColor[2];
+
 }
